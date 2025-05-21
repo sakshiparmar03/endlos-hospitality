@@ -4557,6 +4557,7 @@ footer h4,
 footer h5,
 footer h6 {
   color: #fff;
+font-size: 30px;
 }
 
 h2.text-light,
@@ -5181,7 +5182,7 @@ span.teaser {
 
 .text-white,
 .de_light .text-white {
-  color: #fff;
+color: #678fd5;
 }
 
 .text-light h1,
@@ -20828,4 +20829,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.collection-image {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+
 
