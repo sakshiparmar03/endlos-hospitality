@@ -71,11 +71,13 @@
                         <div class="de-flex sm-pt10">
                             <div class="de-flex-col">
                                 <!-- logo begin -->
-                                <div id="logo">
+                               <div id="logo">
                                     <a href="index.html">
-                                        <img class="logo-main" src="images/hospitalitylogo.webp" alt="" >
-                                        <img class="logo-scroll" src="images/hospitalitylogo.webp" alt="" >
-                                        <img class="logo-mobile" src="images/hospitalitylogo.webp" alt="" >
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
                                     </a>
                                 </div>
                                 <!-- logo close -->
@@ -107,24 +109,36 @@
                                     </li> -->
                                     <li><a class="menu-item" href="about.html">About Us</a></li>
                                     <li><a class="menu-item" href="projects.html">Projects</a></li>
-                                         <li><a class="menu-item" href="collections.html">Collections</a>
+                                      
                                     <li><a class="menu-item" href="products.html">Products</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="products.html">All Products</a></li>
-                                            <li><a class="menu-item" href="product-details-new.html">Product Details New</a></li>
-                                            <li><a class="menu-item" href="product-details.html">Product Details Simple</a></li>
-                                        </ul>
+                                        <!-- <ul> -->
+                                            <!-- <li><a class="menu-item" href="products.html">All Products</a></li> -->
+                                            <!-- <li><a class="menu-item" href="product-details-new.html">Product Details New</a></li>
+                                            <li><a class="menu-item" href="product-details.html">Product Details Simple</a></li> -->
+                                        <!-- </ul> -->
                                     </li>
                                     <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
                                     <li><a class="menu-item" href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
+                           <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+
                             <div class="de-flex-col">
-                                <div class="menu_side_area">          
-                                    <a href="contact.html" class="btn-main bg-color-2">Schedule Now</a>
+                                <div class="menu_side_area">
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
                                     <span id="menu-btn"></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,9 +182,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 1.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/11.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -181,9 +195,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 2.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/22.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -194,9 +208,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 3.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/33.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -207,9 +221,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 4.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/44.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -220,9 +234,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 5.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/55.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -233,9 +247,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 6.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/66.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -247,9 +261,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 7.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/77.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -262,9 +276,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 8.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/88.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -277,9 +291,9 @@
                         <div class="col-lg-4 text-center">
                             <a href="project 9.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/99.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -290,11 +304,11 @@
 
                         
                         <div class="col-lg-4 text-center">
-                            <a href="project 9.html" class="d-block hover">
+                            <a href="project 10.html" class="d-block hover">
                                 <div class="relative overflow-hidden rounded-20px">
-                                    <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
+                                    <!-- <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center">
                                         <i class="icofont-plus hover-scale-in-3"></i>
-                                    </div>
+                                    </div> -->
                                     <img src="images/projects/111.png" class="img-fluid hover-scale-1-2" alt="">
                                 </div>
                             </a>
@@ -316,7 +330,7 @@
                 <div class="row gx-5">
                     <!-- Section 1: Logo & Description -->
                     <div class="col-lg-3 col-sm-6">
-                        <img src="images/hospitalitylogo.webp" alt="Endlos Hospitality Logo">
+                        <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo">
                         <div class="spacer-20"></div>
                         <p>
                             Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
@@ -344,7 +358,7 @@
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="collections.html">Collections</a></li>
+                                <!-- <li><a href="collections.html">Collections</a></li> -->
                                 <li><a href="projects.html">Project</a></li>
                                 <li><a href="products.html">Products</a></li>
                                 <li><a href="contact.html">Contact</a></li>

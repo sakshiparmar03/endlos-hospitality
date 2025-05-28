@@ -76,11 +76,11 @@
                                 <!-- logo begin -->
                                 <div id="logo">
                                     <a href="index.html">
-                                        <img class="logo-main" src="images/hospitalitylogo.webp" alt="">
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
                                         <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
-                                        <img class="logo-scroll" src="images/hospitalitylogo.webp" alt="">
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
                                         <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
-                                        <img class="logo-mobile" src="images/hospitalitylogo.webp" alt="">
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
                                     </a>
                                 </div>
                                 <!-- logo close -->
@@ -112,7 +112,7 @@
                                     </li>
                                     <li><a class="menu-item" href="about.html">About Us</a></li>
                                     <!-- <li><a class="menu-item" href="collections.html">Collections</a> -->
-                                        <!-- <ul>
+                                    <!-- <ul>
                                             <li><a class="menu-item" href="installation.html">Installation</a></li>
                                             <li><a class="menu-item" href="repair.html">Repair</a></li>
                                             <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
@@ -120,26 +120,41 @@
                                             <li><a class="menu-item" href="price-list.html">Price List</a></li>
                                         </ul> -->
                                     <li><a class="menu-item" href="projects.html">Projects</a></li>
-                                         <li><a class="menu-item" href="collections.html">Collections</a>
+
                                     <li><a class="menu-item" href="products.html">Products</a>
-                                        <ul>
+                                        <!-- <ul>
                                             <li><a class="menu-item" href="products.html">All Products</a></li>
                                             <li><a class="menu-item" href="product-details-new.html">Product Details
                                                     New</a></li>
                                             <li><a class="menu-item" href="product-details.html">Product Details
                                                     Simple</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
                                     <li><a class="menu-item" href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
+                            <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
-                                    <a href="contact.html" class="btn-main bg-color-2">Schedule Now</a>
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
                                     <span id="menu-btn"></span>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -413,129 +428,131 @@
             </section>
 
             <section class="no-top">
-                <div class="row g-4 services-container">
-
-                    <div class="container">
-                        <div class="row g-4">
-                            <div class="row">
-                                <div class="col-lg-6 offset-lg-3 text-center">
-                                    <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Complete Solutions</div> -->
-                                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Project Management Overview</h2>
-                                    <p class="lead wow fadeInUp">From initial layout planning to final installation,
-                                        this
-                                        process ensures efficient design, brand approval, quality production, and timely
-                                        delivery, resulting in high-quality, customized spaces tailored to client needs.
-                                    </p>
-                                </div>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3 text-center">
+                                <div class="subtitle bg-color-3 wow fadeInUp mb-3">Complete Solutions</div>
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Project Management Overview</h2>
+                                <p class="lead wow fadeInUp">From initial layout planning to final installation, this
+                                    process ensures efficient design, brand approval, quality production, and timely
+                                    delivery, resulting in high-quality, customized spaces tailored to client needs.</p>
                             </div>
-
-                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0s">
-                                <div class="rounded-20px overflow-hidden">
-                                    <div class="relative">
-                                        <!-- <img src="images/svg/LayoutMeasurment.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-3 rounded-10px absolute" alt=""> -->
-                                        <img src="images/misc/services-1.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="padding40 bg-color-3">
-                                        <h4>1. Layout & Measurements</h4>
-                                        <p class="no-bottom">Clients provide site measurements, based on which we design
-                                            a
-                                            functional and efficient layout tailored to the space. </p>
-                                        <div class="spacer-20"></div>
-                                        <!-- <a class="btn-main btn-light-trans" href="installation.html">Read more</a> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".2s">
-                                <div class="rounded-20px overflow-hidden">
-                                    <div class="relative">
-                                        <!-- <img src="images/svg/3Dvisulization.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-2 rounded-10px absolute" alt=""> -->
-                                        <img src="images/misc/services-2.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="padding40 bg-color-2 text-light">
-                                        <h4>2. 3D Visualization and Renders</h4>
-                                        <p class="no-bottom">We craft high-quality 3D visualizations and renders that
-                                            provide
-                                            clients with a clear and realistic preview of their space.
-                                        </p>
-                                        <div class="spacer-20"></div>
-                                        <!-- <a class="btn-main btn-dark-trans" href="repair.html">Read more</a> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                                <div class="rounded-20px overflow-hidden">
-                                    <div class="relative">
-                                        <!-- <img src="images/svg/keylineDrawing.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color rounded-10px absolute" alt=""> -->
-                                        <img src="images/misc/services-3.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="padding40 bg-color text-light">
-                                        <h4>3. Keyline Drawing</h4>
-                                        <p class="no-bottom"> Detailed keyline drawings are prepared, showing exact
-                                            dimensions, materials, and specifications to guide the production team.
-                                        </p>
-                                        <div class="spacer-20"></div>
-                                        <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                                <div class="rounded-20px overflow-hidden">
-                                    <div class="relative">
-                                        <!-- <img src="images/svg/agreement.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-3 rounded-10px absolute" alt=""> -->
-                                        <img src="images/misc/services-4.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="padding40 bg-color-3">
-                                        <h4>4. Brand Approval and Agreement Signing</h4>
-                                        <p class="no-bottom">Final designs are submitted for brand or client approval,
-                                            followed by the signing of agreements to begin production.
-                                        </p>
-                                        <div class="spacer-20"></div>
-                                        <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                                <div class="rounded-20px overflow-hidden">
-                                    <div class="relative">
-                                        <!-- <img src="images/svg/production.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-2 rounded-10px absolute" alt=""> -->
-                                        <img src="images/misc/services-5.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="padding40 bg-color-2 text-light">
-                                        <h4>5. Production</h4>
-                                        <p class="no-bottom">Our manufacturing team starts production, ensuring strict
-                                            quality control and adherence to the approved designs and specifications.
-                                        </p>
-                                        <div class="spacer-20"></div>
-                                        <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                                <div class="rounded-20px overflow-hidden">
-                                    <div class="relative">
-                                        <!-- <img src="images/svg/dispactch_delivery.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color rounded-10px absolute" alt=""> -->
-                                        <img src="images/misc/services-6.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="padding40 bg-color text-light">
-                                        <h4>6. Dispatch , Delivery and Installation</h4>
-                                        <p class="no-bottom"> Completed products are carefully packed, dispatched to the
-                                            project site, and installed efficiently to ensure a smooth handover.
-                                        </p>
-                                        <div class="spacer-20"></div>
-                                        <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
+
+
+
+
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <!-- <img src="images/svg/LayoutMeasurment.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-3 rounded-10px absolute" alt=""> -->
+                                    <img src="images/misc/services-1.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color-3">
+                                    <h4>1. Layout & Measurements</h4>
+                                    <p class="no-bottom">Clients provide site measurements, which we use to design a
+                                        smart,
+                                        space-efficient layout that balances functionality, aesthetics, and optimal use
+                                        of available space. </p>
+                                    <div class="spacer-20"></div>
+                                    <!-- <a class="btn-main btn-light-trans" href="installation.html">Read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".2s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <!-- <img src="images/svg/3Dvisulization.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-2 rounded-10px absolute" alt=""> -->
+                                    <img src="images/misc/services-2.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color-2 text-light">
+                                    <h4>2. 3D Visualization and Renders</h4>
+                                    <p class="no-bottom">We create high-quality 3D visualizations and renders to help
+                                        clients clearly understand the final look and feel of their space.
+                                    </p>
+                                    <div class="spacer-20"></div>
+                                    <!-- <a class="btn-main btn-dark-trans" href="repair.html">Read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <!-- <img src="images/svg/keylineDrawing.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color rounded-10px absolute" alt=""> -->
+                                    <img src="images/misc/services-3.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color text-light">
+                                    <h4>3. Keyline Drawing</h4>
+                                    <p class="no-bottom">Detailed keyline drawings show exact dimensions and
+                                        specifications,
+                                        ensuring accurate and consistent production while helping to prevent errors and
+                                        streamline the manufacturing process.
+                                    </p>
+                                    <div class="spacer-20"></div>
+                                    <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <!-- <img src="images/svg/agreement.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-3 rounded-10px absolute" alt=""> -->
+                                    <img src="images/misc/services-4.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color-3">
+                                    <h4>4. Brand Approval and Agreement Signing</h4>
+                                    <p class="no-bottom">Final designs are submitted for client approval to ensure
+                                        satisfaction. Once approved, agreements are signed to officially begin
+                                        production</p>
+                                    <div class="spacer-20"></div>
+                                    <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <!-- <img src="images/svg/production.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-2 rounded-10px absolute" alt=""> -->
+                                    <img src="images/misc/services-5.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color-2 text-light">
+                                    <h4>5. Production</h4>
+                                    <p class="no-bottom">Our manufacturing team begins production, maintaining strict
+                                        quality control and closely following the approved designs and specifications to
+                                        deliver flawless results on time.
+                                    </p>
+                                    <div class="spacer-20"></div>
+                                    <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <!-- <img src="images/svg/dispactch_delivery.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color rounded-10px absolute" alt=""> -->
+                                    <img src="images/misc/services-6.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color text-light">
+                                    <h4>6. Dispatch , Delivery and Installation</h4>
+                                    <p class="no-bottom"> Completed products are carefully packed, dispatched to the
+                                        project site, and installed efficiently to ensure a smooth handover.
+                                    </p>
+                                    <div class="spacer-20"></div>
+                                    <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
+                </div>
             </section>
 
             <section class="bg-color-3">
@@ -626,112 +643,128 @@
                             </div>
                         </div>
 
-                        <!-- <div class="spacer-double"></div> -->
+                        <div class="spacer-double"></div>
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Material We Used</div> -->
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Materials We Use </h2>
+                        </div>
 
-                        <section class="pt50">
-                            <div class="container">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6">
-                                        <!-- <img style="border-radius:4%;" src="images/misc/worker1.webp" class="img-fluid wow scaleIn" -->
-                                        <!-- alt=""> -->
-                                    </div>
-                                    <!-- <div class="col-lg-5 offset-lg-1"> -->
-                                    <!-- <div class="subtitle wow fadeInUp mb-3">Welcome</div> -->
-                                    <!-- <h2 class="wow fadeInUp">Crafted in India, Trusted Across the USA</h2>
-                            <p class="wow fadeInUp">With our own manufacturing facility in India, we’ve been the
-                                trusted partner for hotel owners across the USA, delivering
-                                thoughtfully made, brand-compliant casegoods that speak of
-                                precision, durability, and elegance.</p>
-                            <div class="spacer-10"></div>
-                            <a class="btn-main wow fadeInUp" href="about.html">About Company</a>
-                        </div> -->
-                                </div>
+                        <!-- Partition Line -->
+                        <!-- <hr style="border: 1px solid #727272; margin: 20px 0; width: 100%;"> -->
 
-                                <div class="spacer-double"></div>
+                            <!-- Carousel Wrapper -->
+<div class="logo-carousel" style="background: 0% 0% / cover no-repeat rgb(249 250 255);">
+  <div class="logo-track">
+    <!-- Repeat the logos twice for seamless infinite effect -->
+    <div class="logo-slide"><img src="images/rawmaterailbrand/carbphase2.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/centurylogo.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/hettich.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/logo2.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/merino2.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/rehanu2.webp" alt=""></div>
+     <div class="logo-slide"><img src="images/rawmaterailbrand/ss1.png" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/ss2.png" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/ss3.png" alt=""></div>
 
+    <!-- Duplicate for infinite loop effect -->
+    <div class="logo-slide"><img src="images/rawmaterailbrand/carbphase2.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/centurylogo.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/hettich.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/logo2.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/merino2.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/rehanu2.webp" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/ss1.png" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/ss2.png" alt=""></div>
+    <div class="logo-slide"><img src="images/rawmaterailbrand/ss3.png" alt=""></div>
+  </div>
+</div>
 
+<!-- CSS -->
+<style>
+.logo-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+    background: #f2f2f2;
+  padding: 20px 0;
+}
 
+.logo-track {
+  display: flex;
+  width: calc(12 * 160px); /* 12 logos * width */
+  animation: scroll 30s linear infinite;
+}
 
+.logo-slide {
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-                                <div class="col-lg-6 offset-lg-3 text-center">
-                                    <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Material We Used</div> -->
-                                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Materials We Use </h2>
-                                </div>
+.logo-slide img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  object-fit: contain;
+}
 
-                                <!-- Partition Line -->
-                                <!-- <hr style="border: 1px solid #727272; margin: 20px 0; width: 100%;"> -->
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
 
-                                <div class="row gx-5">
-                                    <div class="col-lg-2 col-6">
-                                        <img src="images/rawmaterailbrand/carbphase2.webp"
-                                            class="p-2 img-fluid wow scaleIn" data-wow-delay=".0s" alt="">
-                                    </div>
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
 
-                                    <div class="col-lg-2 col-6">
-                                        <img src="images/rawmaterailbrand/centurylogo.webp"
-                                            class="p-2 img-fluid wow scaleIn" data-wow-delay=".2s" alt="">
-                                    </div>
-
-                                    <div class="col-lg-2 col-6">
-                                        <img src="images/rawmaterailbrand/hettich.webp"
-                                            class="p-2 img-fluid wow scaleIn" data-wow-delay=".4s" alt="">
-                                    </div>
-
-                                    <div class="col-lg-2 col-6">
-                                        <img src="images/rawmaterailbrand/logo2.webp" class="p-2 img-fluid wow scaleIn"
-                                            data-wow-delay=".6s" alt="">
-                                    </div>
-
-                                    <div class="col-lg-2 col-6">
-                                        <img src="images/rawmaterailbrand/merino2.webp"
-                                            class="p-2 img-fluid wow scaleIn" data-wow-delay=".8s" alt="">
-                                    </div>
-
-                                    <div class="col-lg-2 col-6">
-                                        <img src="images/rawmaterailbrand/rehanu2.webp"
-                                            class="p-2 img-fluid wow scaleIn" data-wow-delay="1s" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
                 </div>
             </section>
+        </div>
+    </div>
+    </section>
 
 
 
 
-            <section class="no-top mt-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div
-                                class="padding60 rounded-1 sm-padding40 overflow-hidden position-relative jarallax text-light">
-                                <img src="images/background/9.png" class="jarallax-img" alt="">
-                                <div class="row align-items-center g-4 gx-5 relative z-index-1000">
-                                    <div class="col-lg-8">
-                                        <!-- <div class="subtitle s2 wow fadeInUp mb-3">HVAC Specialist</div> -->
-                                        <h2 class="mb20 wow fadeInUp" data-wow-delay=".2s">At Endlos Hospitality,
-                                            we craft durable, stylish furniture with a focus on quality, innovation,
-                                            and sustainability, helping hotels create memorable, comfortable spaces for
-                                            their guests.</h2>
-                                        <!-- <a class="btn-main" href="contact.html">Schedule Now</a> -->
-                                    </div>
-                                    <div class="col-lg-4 text-center">
-                                        <img src="images/team/khilanpatel.webp"
-                                            class="img-fluid rounded-10px wow scaleIn" alt="">
-                                        <h5 class="mt-3 mb-0">Khilan Patel</h5>
-                                        <p class="small mb-2">Founder &amp; CEO</p>
-                                    </div>
-                                </div>
+
+
+
+
+    <section class="no-top mt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="padding60 rounded-1 sm-padding40 overflow-hidden position-relative jarallax text-light">
+                        <img src="images/background/9.png" class="jarallax-img" alt="">
+                        <div class="row align-items-center g-4 gx-5 relative z-index-1000">
+                            <div class="col-lg-8">
+                                <!-- <div class="subtitle s2 wow fadeInUp mb-3">HVAC Specialist</div> -->
+                                <h2 class="mb20 wow fadeInUp" data-wow-delay=".2s">At Endlos Hospitality,
+                                    we craft durable, stylish furniture with a focus on quality, innovation,
+                                    and sustainability, helping hotels create memorable, comfortable spaces for
+                                    their guests.</h2>
+                                <!-- <a class="btn-main" href="contact.html">Schedule Now</a> -->
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                <img src="images/team/khilanpatel.webp" class="img-fluid rounded-10px wow scaleIn"
+                                    alt="">
+                                <h5 class="mt-3 mb-0">Khilan Patel</h5>
+                                <p class="small mb-2">Founder &amp; CEO</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Services Process below -->
-            <!-- <section class="no-top">
+    <!-- Services Process below -->
+    <!-- <section class="no-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 offset-lg-3 text-center">
@@ -772,8 +805,8 @@
                 </div>
             </section> -->
 
-            <!-- Our Specialize section below -->
-            <!-- <section class="no-top">
+    <!-- Our Specialize section below -->
+    <!-- <section class="no-top">
                 <div class="container">
                     <div class="row  gx-5 align-items-center">
                         <div class="col-lg-6">
@@ -814,377 +847,377 @@
                 </div>
             </section> -->
 
-            <section class="no-top text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3 text-center">
-                            <!-- <div class="subtitle wow fadeInUp mb-3">Testimonials</div> -->
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Happy Customers</h2>
-                            <p class="lead wow fadeInUp">Real feedback from our satisfied customers, sharing
-                                 their experiences and the value they've found in our services.</p>
-                            <div class="spacer-single"></div>
+    <section class="no-top text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 text-center">
+                    <!-- <div class="subtitle wow fadeInUp mb-3">Testimonials</div> -->
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Happy Customers</h2>
+                    <p class="lead wow fadeInUp">Real feedback from our satisfied customers, sharing
+                        their experiences and the value they've found in our services.</p>
+                    <div class="spacer-single"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="owl-carousel owl-theme wow fadeInUp" id="testimonial-carousel">
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/1.jpg">
+                                    <div>Michael S.<span>Customer</span></div>
+                                </div>
+                                <p>"Their technicians are always prompt, professional, and knowledgeable. From
+                                    regular maintenance to emergency repairs, they've got us covered. Highly
+                                    recommend!""
+                                </p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/2.jpg">
+                                    <div>Robert L.<span>Customer</span></div>
+                                </div>
+                                <p>"They responded promptly and had a technician at my door in no time. Within a
+                                    few hours, my AC was back up and running smoothly. I'm incredibly grateful
+                                    for their quick response and expert repair work."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/3.jpg">
+                                    <div>Jake M.<span>Customer</span></div>
+                                </div>
+                                <p>"Their commitment to customer satisfaction is unmatched. Whether it's a
+                                    routine maintenance visit or a complex repair job, I know I can count on
+                                    them to deliver exceptional service every time. "</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/4.jpg">
+                                    <div>Alex P.<span>Customer</span></div>
+                                </div>
+                                <p>"From the initial consultation to the final installation, their team
+                                    demonstrated professionalism, expertise, and a commitment to excellence. Our
+                                    new HVAC system is performing flawlessly."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/5.jpg">
+                                    <div>Carlos R.<span>Customer</span></div>
+                                </div>
+                                <p>"Their technicians quickly diagnosed the problem and recommended a
+                                    cost-effective solution. Thanks to their expertise and efficient repair
+                                    work, our home is now consistently comfortable."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/6.jpg">
+                                    <div>Edward B.<span>Customer</span></div>
+                                </div>
+                                <p>"Their attention to detail, dedication to customer satisfaction, and
+                                    commitment to quality set them apart from the competition. Trust it whether
+                                    it's a routine maintenance visit or a complex repair job."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/7.jpg">
+                                    <div>Daniel H.<span>Customer</span></div>
+                                </div>
+                                <p>"From start to finish, their team provided top-notch service, guiding me
+                                    through the selection process, handling the installation with precision, and
+                                    ensuring everything was in perfect working order."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/8.jpg">
+                                    <div>Bryan G.<span>Customer</span></div>
+                                </div>
+                                <p>"Their technicians are knowledgeable, courteous, and always go the extra mile
+                                    to ensure customer satisfaction. Whether it's a routine tune-up or a major
+                                    repair."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="owl-carousel owl-theme wow fadeInUp" id="testimonial-carousel">
-                            <div class="item">
-                                <div class="de_testi s2">
-                                    <blockquote>
-                                        <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
-                                        <div class="de_testi_by">
-                                            <img class="bg-white p-2 circle" alt="" src="images/testimonial/1.jpg">
-                                            <div>Michael S.<span>Customer</span></div>
-                                        </div>
-                                        <p>"Their technicians are always prompt, professional, and knowledgeable. From
-                                            regular maintenance to emergency repairs, they've got us covered. Highly
-                                            recommend!""
-                                        </p>
-                                        <div class="de-rating-ext">
-                                            <span class="d-stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="de_testi s2">
-                                    <blockquote>
-                                        <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
-                                        <div class="de_testi_by">
-                                            <img class="bg-white p-2 circle" alt="" src="images/testimonial/2.jpg">
-                                            <div>Robert L.<span>Customer</span></div>
-                                        </div>
-                                        <p>"They responded promptly and had a technician at my door in no time. Within a
-                                            few hours, my AC was back up and running smoothly. I'm incredibly grateful
-                                            for their quick response and expert repair work."</p>
-                                        <div class="de-rating-ext">
-                                            <span class="d-stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="de_testi s2">
-                                    <blockquote>
-                                        <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
-                                        <div class="de_testi_by">
-                                            <img class="bg-white p-2 circle" alt="" src="images/testimonial/3.jpg">
-                                            <div>Jake M.<span>Customer</span></div>
-                                        </div>
-                                        <p>"Their commitment to customer satisfaction is unmatched. Whether it's a
-                                            routine maintenance visit or a complex repair job, I know I can count on
-                                            them to deliver exceptional service every time. "</p>
-                                        <div class="de-rating-ext">
-                                            <span class="d-stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="de_testi s2">
-                                    <blockquote>
-                                        <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
-                                        <div class="de_testi_by">
-                                            <img class="bg-white p-2 circle" alt="" src="images/testimonial/4.jpg">
-                                            <div>Alex P.<span>Customer</span></div>
-                                        </div>
-                                        <p>"From the initial consultation to the final installation, their team
-                                            demonstrated professionalism, expertise, and a commitment to excellence. Our
-                                            new HVAC system is performing flawlessly."</p>
-                                        <div class="de-rating-ext">
-                                            <span class="d-stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="de_testi s2">
-                                    <blockquote>
-                                        <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
-                                        <div class="de_testi_by">
-                                            <img class="bg-white p-2 circle" alt="" src="images/testimonial/5.jpg">
-                                            <div>Carlos R.<span>Customer</span></div>
-                                        </div>
-                                        <p>"Their technicians quickly diagnosed the problem and recommended a
-                                            cost-effective solution. Thanks to their expertise and efficient repair
-                                            work, our home is now consistently comfortable."</p>
-                                        <div class="de-rating-ext">
-                                            <span class="d-stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="de_testi s2">
-                                    <blockquote>
-                                        <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
-                                        <div class="de_testi_by">
-                                            <img class="bg-white p-2 circle" alt="" src="images/testimonial/6.jpg">
-                                            <div>Edward B.<span>Customer</span></div>
-                                        </div>
-                                        <p>"Their attention to detail, dedication to customer satisfaction, and
-                                            commitment to quality set them apart from the competition. Trust it whether
-                                            it's a routine maintenance visit or a complex repair job."</p>
-                                        <div class="de-rating-ext">
-                                            <span class="d-stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="de_testi s2">
-                                    <blockquote>
-                                        <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
-                                        <div class="de_testi_by">
-                                            <img class="bg-white p-2 circle" alt="" src="images/testimonial/7.jpg">
-                                            <div>Daniel H.<span>Customer</span></div>
-                                        </div>
-                                        <p>"From start to finish, their team provided top-notch service, guiding me
-                                            through the selection process, handling the installation with precision, and
-                                            ensuring everything was in perfect working order."</p>
-                                        <div class="de-rating-ext">
-                                            <span class="d-stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="de_testi s2">
-                                    <blockquote>
-                                        <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
-                                        <div class="de_testi_by">
-                                            <img class="bg-white p-2 circle" alt="" src="images/testimonial/8.jpg">
-                                            <div>Bryan G.<span>Customer</span></div>
-                                        </div>
-                                        <p>"Their technicians are knowledgeable, courteous, and always go the extra mile
-                                            to ensure customer satisfaction. Whether it's a routine tune-up or a major
-                                            repair."</p>
-                                        <div class="de-rating-ext">
-                                            <span class="d-stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-color-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 text-center">
+                    <!-- <div class="subtitle bg-color-2 text-light wow fadeInUp mb-3">Do you have</div> -->
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Any questions?</h2>
                 </div>
-            </section>
+            </div>
 
-            <section class="bg-color-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3 text-center">
-                            <!-- <div class="subtitle bg-color-2 text-light wow fadeInUp mb-3">Do you have</div> -->
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Any questions?</h2>
-                        </div>
-                    </div>
-
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6 mb-sm-20 position-relative">
-                            <div class="relative p-4">
-                                <!-- <div class="absolute start-50px top-50px">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 mb-sm-20 position-relative">
+                    <div class="relative p-4">
+                        <!-- <div class="absolute start-50px top-50px">
                                     <i
                                         class="bg-color text-light  fs-48 p-2  id-color icofont-headphone-alt rounded-10px mb-2 wow scaleIn"></i><br>
                                 </div> -->
-                                <img src="images/misc/1.png" class="img-fluid rounded-20px wow zoomIn"
-                                    data-wow-delay="0s" alt="">
+                        <img src="images/misc/1.png" class="img-fluid rounded-20px wow zoomIn" data-wow-delay="0s"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="accordion s2 wow fadeInUp">
+                        <div class="accordion-section">
+                            <div class="accordion-section-title" data-tab="#accordion-a1">
+                                What types of furniture do you manufacture?
                             </div>
-                        </div>
+                            <div class="accordion-section-content" id="accordion-a1">
+                                <p>We manufacture hospitality furniture and case goods for
+                                    hotel brands, including beds and headboards, desks, wardrobes,
+                                    and seating for guest rooms, lobbies, dining areas, and more.
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a2">
+                                Can you design custom furniture collections for our hotel brand?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a2">
+                                <p>Absolutely, our team designs custom furniture based on your hotel
+                                    brand’s needs. We also create collections for independent hotels
+                                    looking for something specific.
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a3">
+                                Do you have experience working with hotel chains?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a3">
+                                <p>Over the years, we’ve partnered with several hotel chains
+                                    across the US, providing quality furniture designed and built for
+                                    their hotels' honor and guest spaces.</p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a4">
+                                What’s your typical production and delivery timeline?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a4">
+                                <p>As soon as the design is approved, we begin right away.
+                                    Production and dispatch are completed within 4 to 6 weeks.
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a5">
+                                Where is your manufacturing facility located?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a5">
+                                <p>We manufacture all our furniture in Gujarat, near the Ahmedabad region. </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a6">
+                                How do you handle shipping and logistics to the USA?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a6">
+                                <p>You can get a quote by visiting our website or contacting our customer
+                                    service. We provide transparent pricing with no hidden fees.</p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a7">
+                                How do I start a project with you?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a7">
+                                <p>
+                                    Getting started is simple: fill out our
+                                    <a href="https://endloshospitalityweb.netlify.app/contact"><u>Contact</u></a>
+                                    form with a few project details, and our team will contact you to proceed
+                                    further.
+                                </p>
 
-                        <div class="col-lg-6">
-                            <div class="accordion s2 wow fadeInUp">
-                                <div class="accordion-section">
-                                    <div class="accordion-section-title" data-tab="#accordion-a1">
-                                        What types of furniture do you manufacture?
-                                    </div>
-                                    <div class="accordion-section-content" id="accordion-a1">
-                                        <p>We manufacture hospitality furniture and case goods for
-                                            hotel brands, including beds and headboards, desks, wardrobes,
-                                            and seating for guest rooms, lobbies, dining areas, and more.
-                                        </p>
-                                    </div>
-                                    <div class="accordion-section-title" data-tab="#accordion-a2">
-                                        Can you design custom furniture collections for our hotel brand?
-                                    </div>
-                                    <div class="accordion-section-content" id="accordion-a2">
-                                        <p>Absolutely, our team designs custom furniture based on your hotel
-                                            brand’s needs. We also create collections for independent hotels
-                                            looking for something specific.
-                                        </p>
-                                    </div>
-                                    <div class="accordion-section-title" data-tab="#accordion-a3">
-                                        Do you have experience working with hotel chains?
-                                    </div>
-                                    <div class="accordion-section-content" id="accordion-a3">
-                                        <p>Over the years, we’ve partnered with several hotel chains
-                                            across the US, providing quality furniture designed and built for
-                                            their hotels' honor and guest spaces.</p>
-                                    </div>
-                                    <div class="accordion-section-title" data-tab="#accordion-a4">
-                                        What’s your typical production and delivery timeline?
-                                    </div>
-                                    <div class="accordion-section-content" id="accordion-a4">
-                                        <p>As soon as the design is approved, we begin right away.
-                                            Production and dispatch are completed within 4 to 6 weeks.
-                                        </p>
-                                    </div>
-                                    <div class="accordion-section-title" data-tab="#accordion-a5">
-                                        Where is your manufacturing facility located?
-                                    </div>
-                                    <div class="accordion-section-content" id="accordion-a5">
-                                        <p>We manufacture all our furniture in Gujarat, near the Ahmedabad region. </p>
-                                    </div>
-                                    <div class="accordion-section-title" data-tab="#accordion-a6">
-                                        How do you handle shipping and logistics to the USA?
-                                    </div>
-                                    <div class="accordion-section-content" id="accordion-a6">
-                                        <p>You can get a quote by visiting our website or contacting our customer
-                                            service. We provide transparent pricing with no hidden fees.</p>
-                                    </div>
-                                    <div class="accordion-section-title" data-tab="#accordion-a7">
-                                        How do I start a project with you?
-                                    </div>
-                                    <div class="accordion-section-content" id="accordion-a7">
-                                        <p>
-                                            Getting started is simple: fill out our
-                                            <a
-                                                href="https://endloshospitalityweb.netlify.app/contact"><u>Contact</u></a>
-                                            form with a few project details, and our team will contact you to proceed
-                                            further.
-                                        </p>
-
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <section>
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="col-lg-6 offset-lg-3 text-center">
-                            <!-- <div class="subtitle wow fadeInUp mb-3">Latest Post</div> -->
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Stay updated with us</h2>
-                            <p class="lead wow fadeInUp">Get the latest news, updates, and exclusive offers delivered straight to your inbox.</p>
-                            <div class="spacer-single"></div>
-                        </div>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 mb10">
-                            <div class="bloglist rounded-20px">
-                                <div class="post-content">
-                                    <div class="post-image">
-                                        <div class="d-tagline">
-                                            <!-- <span>tips &amp; tricks</span> -->
-                                        </div>
-                                        <img alt="" src="images/news/1.webp" class="lazy">
-                                    </div>
-                                    <div class="post-text padding40 pt-2 h-100">
-                                        <h4><a href="blog-single.html">Tips for Optimizing Your Air Conditioning
-                                                System</a></h4>
-                                        <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim
-                                            reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
-                                        <!-- <a class="btn-main btn-light-trans mt-3" href="blog-single.html">Read more</a> -->
-                                    </div>
+    <section>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 offset-lg-3 text-center">
+                    <!-- <div class="subtitle wow fadeInUp mb-3">Latest Post</div> -->
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Stay updated with us</h2>
+                    <p class="lead wow fadeInUp">Get the latest news, updates, and exclusive offers delivered
+                        straight to your inbox.</p>
+                    <div class="spacer-single"></div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 mb10">
+                    <div class="bloglist rounded-20px">
+                        <div class="post-content">
+                            <div class="post-image">
+                                <div class="d-tagline">
+                                    <!-- <span>tips &amp; tricks</span> -->
                                 </div>
+                                <img alt="" src="images/news/1.webp" class="lazy">
                             </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb10">
-                            <div class="bloglist rounded-20px">
-                                <div class="post-content">
-                                    <div class="post-image">
-                                        <div class="d-tagline">
-                                            <!-- <span>tips &amp; tricks</span> -->
-                                        </div>
-                                        <img alt="" src="images/news/2.webp" class="lazy">
-                                    </div>
-                                    <div class="post-text padding40 pt-2 h-100">
-                                        <h4><a href="blog-single.html">Harnessing Technology for Energy-Efficient AC</a>
-                                        </h4>
-                                        <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim
-                                            reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
-                                        <!-- <a class="btn-main btn-light-trans mt-3" href="blog-single.html">Read more</a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb10">
-                            <div class="bloglist rounded-20px">
-                                <div class="post-content">
-                                    <div class="post-image">
-                                        <div class="d-tagline">
-                                            <!-- <span>tips &amp; tricks</span> -->
-                                        </div>
-                                        <img alt="" src="images/news/3.webp" class="lazy">
-                                    </div>
-                                    <div class="post-text padding40 pt-2 h-100">
-                                        <h4><a href="blog-single.html">The Impact of Air Conditioning on Indoor Air
-                                                Quality</a></h4>
-                                        <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim
-                                            reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
-                                        <!-- <a class="btn-main btn-light-trans mt-3" href="blog-single.html">Read more</a> -->
-                                    </div>
-                                </div>
+                            <div class="post-text padding40 pt-2 h-100">
+                                <h4><a href="blog-single.html">Tips for Optimizing Your Air Conditioning
+                                        System</a></h4>
+                                <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim
+                                    reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                <!-- <a class="btn-main btn-light-trans mt-3" href="blog-single.html">Read more</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- <section class="no-top relative">
+                <div class="col-lg-4 col-md-6 mb10">
+                    <div class="bloglist rounded-20px">
+                        <div class="post-content">
+                            <div class="post-image">
+                                <div class="d-tagline">
+                                    <!-- <span>tips &amp; tricks</span> -->
+                                </div>
+                                <img alt="" src="images/news/2.webp" class="lazy">
+                            </div>
+                            <div class="post-text padding40 pt-2 h-100">
+                                <h4><a href="blog-single.html">Harnessing Technology for Energy-Efficient AC</a>
+                                </h4>
+                                <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim
+                                    reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                <!-- <a class="btn-main btn-light-trans mt-3" href="blog-single.html">Read more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb10">
+                    <div class="bloglist rounded-20px">
+                        <div class="post-content">
+                            <div class="post-image">
+                                <div class="d-tagline">
+                                    <!-- <span>tips &amp; tricks</span> -->
+                                </div>
+                                <img alt="" src="images/news/3.webp" class="lazy">
+                            </div>
+                            <div class="post-text padding40 pt-2 h-100">
+                                <h4><a href="blog-single.html">The Impact of Air Conditioning on Indoor Air
+                                        Quality</a></h4>
+                                <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim
+                                    reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                <!-- <a class="btn-main btn-light-trans mt-3" href="blog-single.html">Read more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="no-top relative">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -1214,39 +1247,38 @@
                     </div>
                 </div>
             </section> -->
+    <!-- ✅ Brands Section -->
+    <section class="no-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-12 text-center wow fadeInUp">
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s" style="margin-top: -5px;">Brands we are
+                        working with</h2>
+                </div>
 
-            <section class="no-top">
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="col-lg-12 text-center wow fadeInUp">
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s" margin-top: -5px;>Brands we are working with</h2>
-                        </div>
-
-                        <div class="col-md-12 wow fadeInUp">
-                            <div id="owl-logo" class="logo-carousel no-alpha owl-carousel owl-theme">
-                                <img src="images/workingWithBrands/wyndham-garden-vector-logo-small.png"
-                                    class="img-fluid px-4" alt="">
-                                <img src="images/super8.jpg" class="img-fluid px-4" alt="">
-                                <img src="images/workingWithBrands/ramada4832.jpg" class="img-fluid px-4" alt="">
-                                <img src="images/workingWithBrands/microtel-inn-suites-by-wyndham.png"
-                                    class="img-fluid px-4" alt="">
-                                <img src="images/workingWithBrands/Days_Inn_logo.svg.png" class="img-fluid px-4" alt="">
-                                <img src="images/workingWithBrands/candlewood-suites6397.jpg" class="img-fluid px-4"
-                                    alt="">
-                                <img src="images/workingWithBrands/Best-Western-logo2-1.png" class="img-fluid px-4"
-                                    alt="">
-                                <img src="images/workingWithBrands/Americas_Best_Value_Inn_Logo.png"
-                                    class="img-fluid px-4" alt="">
-                                <img src="images/workingWithBrands/AmericInn_logo.svg.png" class="img-fluid px-4"
-                                    alt="">
-                                <img src="images/workingWithBrands/Comfort_Inn_Logo.jpg" class="img-fluid px-4" alt="">
-                            </div>
-                        </div>
+                <div class="col-md-12 wow fadeInUp">
+                    <div id="owl-logo" class="logo-carousel owl-carousel owl-theme">
+                        <img src="images/workingWithBrands/wyndham-garden-vector-logo-small-removebg-preview.png" class="img-fluid px-4"
+                            alt="">
+                        <img src="images/workingWithBrands/Super_8_Motel.svg-removebg-preview.png" class="img-fluid px-4" alt="">
+                        <img src="images/workingWithBrands/ramada4832-removebg-preview.png" class="img-fluid px-4" alt="">
+                        <img src="images/workingWithBrands/microtel-inn-suites-by-wyndham.png" class="img-fluid px-4"
+                            alt="">
+                        <img src="images/workingWithBrands/Days_Inn_logo.svg.png" class="img-fluid px-4" alt="">
+                        <img src="images/workingWithBrands/candlewood-suites6397-removebg-preview.png" class="img-fluid px-4" alt="">
+                        <img src="images/workingWithBrands/Best-Western-logo2-1.png" class="img-fluid px-4" alt="">
+                        <img src="images/workingWithBrands/Americas_Best_Value_Inn_Logo.png" class="img-fluid px-4"
+                            alt="">
+                        <img src="images/workingWithBrands/AmericInn_logo.svg.png" class="img-fluid px-4" alt="">
+                        <img src="images/workingWithBrands/Comfort_Inn_Logo-removebg-preview.png" class="img-fluid px-4" alt="">
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- <section class="bg-color text-light pt40 pb40">
+
+    <!-- <section class="bg-color text-light pt40 pb40">
                 <div class="container">
                     <div class="row g-4 align-items-center">
                         <div class="col-lg-9">
@@ -1261,115 +1293,115 @@
                 </div>
             </section> -->
 
-        </div>
-        <!-- content close -->
+    </div>
+    <!-- content close -->
 
-        <!-- footer begin -->
-        <footer class="section-dark">
-            <div class="container">
-                <div class="row gx-5">
-                    <!-- Section 1: Logo & Description -->
-                    <div class="col-lg-3 col-sm-6">
-                        <img src="images/hospitalitylogo.webp" alt="Endlos Hospitality Logo">
-                        <div class="spacer-20"></div>
-                        <p>
-                            Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
-                            production capabilities. From guest room case goods to custom solutions, we craft durable,
-                            high-quality furniture tailored to the needs of the hospitality industry—delivering across
-                            global markets with a commitment to excellence and reliability.
-                        </p>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/share/18yzjuK4eE/"><i
-                                    class="fa-brands fa-facebook fa-lg"></i></a>
-                            <a href="https://www.linkedin.com/in/khilanmpatel/"><i
-                                    class="fa-brands fa-linkedin fa-lg"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
-                            <a
-                                href="https://www.instagram.com/patel_khilan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                                    class="fa-brands fa-instagram fa-lg"></i></a>
-                        </div>
+    <!-- footer begin -->
+    <footer class="section-dark">
+        <div class="container">
+            <div class="row gx-5">
+                <!-- Section 1: Logo & Description -->
+                <div class="col-lg-3 col-sm-6">
+                    <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo">
+                    <div class="spacer-20"></div>
+                    <p>
+                        Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
+                        production capabilities. From guest room case goods to custom solutions, we craft durable,
+                        high-quality furniture tailored to the needs of the hospitality industry—delivering across
+                        global markets with a commitment to excellence and reliability.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/18yzjuK4eE/"><i
+                                class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/in/khilanmpatel/"><i
+                                class="fa-brands fa-linkedin fa-lg"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                        <a
+                            href="https://www.instagram.com/patel_khilan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                class="fa-brands fa-instagram fa-lg"></i></a>
                     </div>
+                </div>
 
-                    <!-- Section 2: Company Links -->
-                    <div class="col-lg-3 col-sm-6 d-flex justify-content-center">
-                        <div class="widget text-left">
-                            <h5 class="text-white mb-3">Company</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="collections.html">Collections</a></li>
-                                <li><a href="projects.html">Project</a></li>
-                                <li><a href="products.html">Products</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                <!-- Section 2: Company Links -->
+                <div class="col-lg-3 col-sm-6 d-flex justify-content-center">
+                    <div class="widget text-left">
+                        <h5 class="text-white mb-3">Company</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <!-- <li><a href="collections.html">Collections</a></li> -->
+                            <li><a href="projects.html">Project</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Section 3: Contact Info -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="widget">
+                        <!-- <h5 class="id-color-2">24 Hours &amp; Emergencies</h5> -->
+                        <h2 class="jarallax mb0 wow fadeInUp" data-wow-delay=".2s font-size: large;">
+                            <i class="icofont-phone-circle id-color-2"></i> +919727792087
+                        </h2>
+                        <div class="spacer-20"></div>
+                        <div class="fw-bold text-white">
+                            <i class="icofont-location-pin me-2 id-color-2"></i>Factory Location
+                        </div>
+                        Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, opposite Gharda ghar, Kuha,
+                        Gujarat 382433
+                        <div class="spacer-20"></div>
+                        <div class="fw-bold text-white">
+                            <i class="icofont-envelope me-2 id-color-2"></i>Send a Message
+                        </div>
+                        info@endlos.furniture
+                    </div>
+                </div>
+
+                <!-- Section 4: Duplicate Contact Info -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="widget">
+                        <!-- <h5 class="id-color-2">24 Hours &amp; Emergencies</h5> -->
+                        <h2 class="jarallax mb0 wow fadeInUp" data-wow-delay=".2s ">
+                            <i class="icofont-phone-circle id-color-2"></i> +1945-267-7548
+                        </h2>
+                        <div class="spacer-20"></div>
+                        <div class="fw-bold text-white">
+                            <i class="icofont-location-pin me-2 id-color-2"></i>Sales Office
+                        </div>
+                        2117 N Main St,Cleburne, TX 76033, United States
+                        <div class="spacer-20"></div>
+                        <div class="fw-bold text-white">
+                            <i class="icofont-envelope me-2 id-color-2"></i>Send a Message
+                        </div>
+                        info@endlos.furniture
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subfooter -->
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex">
+                            <div class="de-flex-col">
+                                Copyright 2025 - Endlos
+                            </div>
+                            <ul class="menu-simple">
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
-
-
-                    <!-- Section 3: Contact Info -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="widget">
-                            <!-- <h5 class="id-color-2">24 Hours &amp; Emergencies</h5> -->
-                            <h2 class="jarallax mb0 wow fadeInUp" data-wow-delay=".2s font-size: large;">
-                                <i class="icofont-phone-circle id-color-2"></i> +919727792087
-                            </h2>
-                            <div class="spacer-20"></div>
-                            <div class="fw-bold text-white">
-                                <i class="icofont-location-pin me-2 id-color-2"></i>Factory Location
-                            </div>
-                            Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, opposite Gharda ghar, Kuha,
-                            Gujarat 382433
-                            <div class="spacer-20"></div>
-                            <div class="fw-bold text-white">
-                                <i class="icofont-envelope me-2 id-color-2"></i>Send a Message
-                            </div>
-                            info@endlos.furniture
-                        </div>
-                    </div>
-
-                    <!-- Section 4: Duplicate Contact Info -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="widget">
-                            <!-- <h5 class="id-color-2">24 Hours &amp; Emergencies</h5> -->
-                            <h2 class="jarallax mb0 wow fadeInUp" data-wow-delay=".2s ">
-                                <i class="icofont-phone-circle id-color-2"></i> +1945-267-7548
-                            </h2>
-                            <div class="spacer-20"></div>
-                            <div class="fw-bold text-white">
-                                <i class="icofont-location-pin me-2 id-color-2"></i>Sales Office 
-                            </div>
-                            2117 N Main St,Cleburne, TX 76033, United States
-                            <div class="spacer-20"></div>
-                            <div class="fw-bold text-white">
-                                <i class="icofont-envelope me-2 id-color-2"></i>Send a Message
-                            </div>
-                            info@endlos.furniture
-                        </div>
-                    </div>
                 </div>
             </div>
+        </div>
+    </footer>
 
-            <!-- Subfooter -->
-            <div class="subfooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="de-flex">
-                                <div class="de-flex-col">
-                                    Copyright 2025 - Endlos
-                                </div>
-                                <ul class="menu-simple">
-                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- footer close -->
+    <!-- footer close -->
     </div>
 
 
@@ -1381,6 +1413,28 @@
     <script src="js/swiper.js"></script>
     <script src="js/custom-marquee.js"></script>
     <script src="js/custom-swiper-1.js"></script>
+    <script>
+        const track = document.getElementById('sliderTrack');
+        const itemWidth = track.children[0].offsetWidth; // assumes uniform width
+        let index = 0;
+
+        setInterval(() => {
+            index++;
+            // Reset if over half (since duplicated)
+            if (index >= track.children.length / 2) {
+                track.style.transition = 'none';
+                track.style.transform = 'translateX(0px)';
+                index = 1;
+                // allow transition again
+                setTimeout(() => {
+                    track.style.transition = 'transform 0.5s ease-in-out';
+                    track.style.transform = `translateX(-${itemWidth * index}px)`;
+                }, 50);
+            } else {
+                track.style.transform = `translateX(-${itemWidth * index}px)`;
+            }
+        }, 2000); // 1 second interval
+    </script>
 
 </body>
 

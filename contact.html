@@ -70,11 +70,13 @@
                         <div class="de-flex sm-pt10">
                             <div class="de-flex-col">
                                 <!-- logo begin -->
-                                <div id="logo">
+                                    <div id="logo">
                                     <a href="index.html">
-                                        <img class="logo-main" src="images/hospitalitylogo.webp" alt="" >
-                                        <img class="logo-scroll" src="images/hospitalitylogo.webp" alt="" >
-                                        <img class="logo-mobile" src="images/hospitalitylogo.webp" alt="" >
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
                                     </a>
                                 </div>
                                 <!-- logo close -->
@@ -106,21 +108,35 @@
                                     </li> -->
                                     <li><a class="menu-item" href="about.html">About Us</a></li>
                                     <li><a class="menu-item" href="projects.html">Projects</a></li>
-                                         <li><a class="menu-item" href="collections.html">Collections</a>
+                                         
                                     <li><a class="menu-item" href="products.html">Products</a>
-                                        <ul>
+                                        <!-- <ul>
                                             <li><a class="menu-item" href="products.html">All Products</a></li>
                                             <li><a class="menu-item" href="product-details-new.html">Product Details New</a></li>
                                             <li><a class="menu-item" href="product-details.html">Product Details Simple</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
                                     <li><a class="menu-item" href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
+                            <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+
                             <div class="de-flex-col">
-                                <div class="menu_side_area">          
-                                    <a href="contact.html" class="btn-main bg-color-2">Schedule Now</a>
+                                <div class="menu_side_area">
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
                                     <span id="menu-btn"></span>
                                 </div>
                             </div>
@@ -223,8 +239,9 @@
 
                             <div class="spacer-single"></div>
 
-                            <div class="fw-bold text-dark"><i class="icofont-location-pin me-2 id-color-2"></i>Office Location</div>
-                            1108,Shivalik Shilp, Iscon Cross Road,Sarkhej-Gandhinagar Hwy, Ahmedabad, Gujrat 380015
+                            <div class="fw-bold text-dark"><i class="icofont-location-pin me-2 id-color-2"></i>Factory Location</div>
+                          Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, opposite Gharda ghar, Kuha,
+                            Gujarat 382433
 
 
                             <div class="spacer-single"></div>
@@ -252,7 +269,7 @@
                 <div class="row gx-5">
                     <!-- Section 1: Logo & Description -->
                     <div class="col-lg-3 col-sm-6">
-                        <img src="images/hospitalitylogo.webp" alt="Endlos Hospitality Logo">
+                        <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo">
                         <div class="spacer-20"></div>
                         <p>
                             Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
@@ -279,7 +296,7 @@
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="collections.html">Collections</a></li>
+                                <!-- <li><a href="collections.html">Collections</a></li> -->
                                 <li><a href="projects.html">Project</a></li>
                                 <li><a href="products.html">Products</a></li>
                                 <li><a href="contact.html">Contact</a></li>

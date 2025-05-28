@@ -33,7 +33,7 @@
         <!-- page preloader close -->
 
         <!-- header begin -->
-            <header class="transparent scroll-light has-topbar">
+        <header class="transparent scroll-light has-topbar">
             <div id="topbar">
                 <div class="container">
                     <div class="row">
@@ -74,20 +74,20 @@
                         <div class="de-flex sm-pt10">
                             <div class="de-flex-col">
                                 <!-- logo begin -->
-                                <div id="logo">
+                              <div id="logo">
                                     <a href="index.html">
-                                        <img class="logo-main" src="images/hospitalitylogo.webp" alt="">
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
                                         <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
-                                        <img class="logo-scroll" src="images/hospitalitylogo.webp" alt="">
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
                                         <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
-                                        <img class="logo-mobile" src="images/hospitalitylogo.webp" alt="">
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
                                     </a>
                                 </div>
                                 <!-- logo close -->
                             </div>
                             <div class="de-flex-col header-col-mid">
-                                <ul id="mainmenu" >
-                                    <li><a class="menu-item" href="#" style="color: black;">Home</a>
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html" style="color: black;">Home</a>
                                         <!-- <ul>
                                             <li><a class="menu-item" href="index.html">Homepage One</a></li>
                                             <li><a class="menu-item" href="homepage-2.html">Homepage Two</a></li>
@@ -112,34 +112,50 @@
                                     </li>
                                     <li><a class="menu-item" href="about.html" style="color: black;">About Us</a></li>
                                     <!-- <li><a class="menu-item" href="collections.html">Collections</a> -->
-                                        <!-- <ul>
+                                    <!-- <ul>
                                             <li><a class="menu-item" href="installation.html">Installation</a></li>
                                             <li><a class="menu-item" href="repair.html">Repair</a></li>
                                             <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
                                             <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
                                             <li><a class="menu-item" href="price-list.html">Price List</a></li>
                                         </ul> -->
-                                    <li><a class="menu-item" href="projects.html" style="color: black;">Projects</a></li>
-                                         <li><a class="menu-item" href="collections.html" style="color: black;">Collections</a>
+                                    <li><a class="menu-item" href="projects.html" style="color: black;">Projects</a>
+                                    </li>
+
                                     <li><a class="menu-item" href="products.html" style="color: black;">Products</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="products.html" style="color: black;">All Products</a></li>
-                                            <li><a class="menu-item" href="product-details-new.html" style="color: black;">Product Details
+                                        <!-- <ul>
+                                            <li><a class="menu-item" href="products.html" style="color: black;">All
+                                                    Products</a></li>
+                                            <li><a class="menu-item" href="product-details-new.html"
+                                                    style="color: black;">Product Details
                                                     New</a></li>
-                                            <li><a class="menu-item" href="product-details.html" style="color: black;">Product Details
+                                            <li><a class="menu-item" href="product-details.html"
+                                                    style="color: black;">Product Details
                                                     Simple</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
                                     <li><a class="menu-item" href="contact.html" style="color: black;">Contact</a></li>
                                 </ul>
                             </div>
+                          <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
-                                    <a href="contact.html" class="btn-main bg-color-2" style="color: black;">Schedule Now</a>
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
                                     <span id="menu-btn"></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,13 +224,12 @@
                         </div>
 
                         <div class="col-lg-9">
-                            <p>In nisi proident aliqua et nulla ut cillum cupidatat laborum dolore labore commodo
-                                voluptate tempor non consequat laboris excepteur ad veniam sunt aliquip exercitation
-                                velit laborum aliquip commodo excepteur sed nisi anim anim velit qui dolore anim laboris
-                                est dolor incididunt mollit ut ullamco sint adipisicing reprehenderit ad reprehenderit
-                                ut magna adipisicing labore laboris laboris fugiat ut eiusmod aliqua dolore minim amet
-                                occaecat occaecat amet id excepteur sed dolor consectetur laborum irure in sint et sit
-                                nostrud et cupidatat proident ad duis commodo velit velit eu eiusmod laboris anim minim.
+                            <p> Comfort & Functionality for Comfort Inn, Designed to reflect Comfort Inn’s warm and
+                                inviting atmosphere, we at Endlos Hospitality have crafted furniture that blends
+                                durability, practicality, and modern aesthetics. From elegant headboards and nightstands
+                                to functional media panels and lounge seating, each piece is tailored to enhance guest
+                                comfort while upholding brand standards. We can create the same for your Comfort Inn
+                                property, customizing designs to suit your specific needs.
                             </p>
                         </div>
 
@@ -275,6 +290,7 @@
                                                 <p>23"W x 24"D x 87"H</p>
                                                 <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
                                                     Details</a> -->
+                                                     <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
                                             </div>
                                             <div class="text-center py-3">
                                                 <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color-2 text-light fw-bold px-3 rounded-20px">Best Seller</div> -->
@@ -291,8 +307,7 @@
                                                 <h4>Closet</h4>
                                                 <p>24"W x 39"D x 77"H</p>
 
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
+                                              <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
                                             </div>
                                             <div class="text-center py-3">
                                                 <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
@@ -309,11 +324,10 @@
                                                 <h4>Coffee Table</h4>
                                                 <p>27"W x 27"D x 20"H</p>
 
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
+                                                 <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
                                             </div>
                                             <div class="text-center py-3">
-                                                <img src="images/comfortin/img/inn3.png" class="w-80" alt="">
+                                           <img src="images/comfortin/img/inn3.png" class="w-80" alt="">
                                                 <h4>Coffee Table</h4>
                                             </div>
                                         </div>
@@ -326,8 +340,7 @@
                                                 <h4>Double Queen Headboard</h4>
                                                 <p>62"W x 3"D x 28"H</p>
 
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
+                                         <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
                                             </div>
                                             <div class="text-center py-3">
                                                 <img src="images/comfortin/img/inn4.png" class="w-80" alt="">
@@ -343,8 +356,7 @@
                                                 <h4>Desk Chair</h4>
                                                 <p>22"W x 3"D x 28"H</p>
 
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
+                                                 <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
                                             </div>
                                             <div class="text-center py-3">
                                                 <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color-2 text-light fw-bold px-3 rounded-20px">Best Seller</div> -->
@@ -361,8 +373,7 @@
                                                 <h4>Desk</h4>
                                                 <p> 60"W x 24"D x 31"H</p>
 
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
+                                             <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
                                             </div>
                                             <div class="text-center py-3">
                                                 <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
@@ -372,210 +383,199 @@
                                         </div>
                                     </div>
 
-                                   <div class="container">
-                                <div class="row g-4">
+                                    <div class="container">
+                                        <div class="row g-4">
 
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>Desk with metal leg</h4>
-                                                <p> 60"W x 24"D x 31"H</p>
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Desk with metal leg</h4>
+                                                        <p> 60"W x 24"D x 31"H</p>
+                                                       <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color-2 text-light fw-bold px-3 rounded-20px">Best Seller</div> -->
+                                                        <img src="images/comfortin/img/inn7.png" class="w-80" alt="">
+                                                        <h4>Desk with metal leg</h4>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color-2 text-light fw-bold px-3 rounded-20px">Best Seller</div> -->
-                                                <img src="images/comfortin/img/inn7.png" class="w-80" alt="">
-                                                <h4>Desk with metal leg</h4>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>King Wallguard</h4>
+                                                        <p>22"W x 3"D x 28"H</p>
+
+                                                       <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div>///// -->
+                                                        <img src="images/comfortin/img/inn8.png" class="w-80" alt="">
+                                                        <h4>King Wallguard</h4>
+                                                    </div>
+                                                </div>
                                             </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Lounge Chair</h4>
+                                                        <p>22"W x 3"D x 28"H </p>
+                                                        <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn9.png" class="w-80" alt="">
+                                                        <h4>Lounge Chair</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Luggage Bench With Metal Leg</h4>
+                                                        <p>36"W x 17"D x 18"H </p>
+
+                                                      <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn10.png" class="w-80" alt="">
+                                                        <h4>Luggage Bench With Metal Leg</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Media Panel</h4>
+                                                        <p>60"W x 3"D x 31"H </p>
+
+                                                        <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn11.png" class="w-80" alt="">
+                                                        <h4>Media Panel</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>NightStand</h4>
+                                                        <p>20"W x 18"D x 26"H </p>
+
+                                                        <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn12.png" class="w-80" alt="">
+                                                        <h4>NightStand</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Queen Nightstand with wallguard</h4>
+                                                        <p>20"W x 18"D x 26"H</p>
+                                                        <p>24"W x 3"D x 28"H</p>
+
+                                                         <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn13.png" class="w-80" alt="">
+                                                        <h4>Queen Nightstand with wallguard</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>On the go station</h4>
+                                                        <p>60"W x 2"D x 66"H </p>
+
+                                                         <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn14.png" class="w-80" alt="">
+                                                        <h4>On the go station</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Queen Wallguard</h4>
+                                                        <p>24"W x 3"D x 28"H </p>
+
+                                                         <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn15.png" class="w-80" alt="">
+                                                        <h4>Queen Wallguard</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Suite Divider System</h4>
+                                                        <p>78"W x 18"D x 96"H </p>
+
+                                                       <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn16.png" class="w-80" alt="">
+                                                        <h4>Suite Divider System </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Single King Headboard</h4>
+                                                        <p> 78"W x 3"D x 28"H</p>
+
+                                                               <a class="btn-main bg-color-2" href="https://wa.me/9727802087">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/comfortin/img/inn17.png" class="w-80" alt="">
+                                                        <h4>Single King Headboard</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="spacer-double"></div>
+
                                         </div>
                                     </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>King Wallguard</h4>
-                                                <p>22"W x 3"D x 28"H</p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div>///// -->
-                                                <img src="images/comfortin/img/inn8.png" class="w-80" alt="">
-                                                <h4>King Wallguard</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>Lounge Chair</h4>
-                                                <p>22"W x 3"D x 28"H </p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn9.png" class="w-80" alt="">
-                                                <h4>Lounge Chair</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>Luggage Bench With Metal Leg</h4>
-                                                <p>36"W x 17"D x 18"H </p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn10.png" class="w-80" alt="">
-                                                <h4>Luggage Bench With Metal Leg</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>Media Panel</h4>
-                                                <p>60"W x 3"D x 31"H  </p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn11.png" class="w-80" alt="">
-                                                <h4>Media Panel</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>NightStand</h4>
-                                                <p>20"W x 18"D x 26"H </p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn12.png" class="w-80" alt="">
-                                                <h4>NightStand</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>Queen Nightstand with wallguard</h4>
-                                                <p>20"W x 18"D x 26"H</p>
-                                                <p>24"W x 3"D x 28"H</p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn13.png" class="w-80" alt="">
-                                                <h4>Queen Nightstand with wallguard</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>On the go station</h4>
-                                                <p>60"W x 2"D x 66"H </p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn14.png" class="w-80" alt="">
-                                                <h4>On the go station</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>Queen Wallguard</h4>
-                                                <p>24"W x 3"D x 28"H </p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn15.png" class="w-80" alt="">
-                                                <h4>Queen Wallguard</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>Suite Divider System</h4>
-                                                <p>78"W x 18"D x 96"H   </p>
-
-                                                <!-- <a class="btn-main bg-color-2" href="product-details-new.html">View
-                                                    Details</a> -->
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn16.png" class="w-80" alt="">
-                                                <h4>Suite Divider System </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="bg-light relative hover overflow-hidden rounded-1">
-                                            <div
-                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
-                                                <h4>Single King Headboard</h4>
-                                                <p> 78"W x 3"D x 28"H</p>
-
-                                                
-                                            </div>
-                                            <div class="text-center py-3">
-                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
-                                                <img src="images/comfortin/img/inn17.png" class="w-80" alt="">
-                                                <h4>Single King Headboard</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="spacer-double"></div>
-
-                                </div>
-                            </div>
                         </section>
 
 
@@ -591,7 +591,7 @@
                 <div class="row gx-5">
                     <!-- Section 1: Logo & Description -->
                     <div class="col-lg-3 col-sm-6">
-                        <img src="images/hospitalitylogo.webp" alt="Endlos Hospitality Logo">
+                        <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo">
                         <div class="spacer-20"></div>
                         <p>
                             Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
@@ -618,7 +618,7 @@
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="collections.html">Collections</a></li>
+                                <!-- <li><a href="collections.html">Collections</a></li> -->
                                 <li><a href="projects.html">Project</a></li>
                                 <li><a href="products.html">Products</a></li>
                                 <li><a href="contact.html">Contact</a></li>
