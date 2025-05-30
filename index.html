@@ -31,7 +31,11 @@
         <!-- page preloader begin -->
         <div id="de-loader"></div>
         <!-- page preloader close -->
-
+        <style>
+            .bg-white {
+                background-color: white;
+            }
+        </style>
         <!-- header begin -->
         <header class="transparent scroll-light has-topbar">
             <div id="topbar">
@@ -147,7 +151,31 @@
                                 };
                             </script>
                             <!-- Calendly badge widget end -->
+                            <style>
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+                                }
 
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    /* Optional: to ensure text is readable */
+                                }
+
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                                    BACKGROUND: WHITE;
+                                    /* Normal shadow */
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                                    /* Deeper shadow on hover */
+                                }
+                            </style>
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
                                     <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
@@ -184,7 +212,8 @@
                                                     <div class="spacer-single"></div>
                                                     <div class="sw-text-wrapper">
                                                         <!-- <div class="subtitle s2 mb-2">Climate Care</div> -->
-                                                        <h2 class="slider-title mb-3">Designed for Your Brand. Crafted
+                                                        <h2 class="slider-title mb-3" style="color: #f2f2f2;">Designed
+                                                            for Your Brand. Crafted
                                                             Like It’s Ours</h2>
                                                         <!-- <h3 class="slider-teaser mb-3">Solution for Comfort and Reliability</h3> -->
                                                         <div class="spacer-10"></div>
@@ -250,7 +279,8 @@
                                                     <div class="spacer-single"></div>
                                                     <div class="sw-text-wrapper">
                                                         <!-- <div class="subtitle s2 mb-2">Pure Comfort</div> -->
-                                                        <h2 class="slider-title mb-3">From Our Workshop in India to
+                                                        <h2 class="slider-title mb-3" style="color: #f2f2f2;">From Our
+                                                            Workshop in India to
                                                             Hotels Across the USA</h2>
                                                         <!-- <h3 class="slider-teaser mb-3">Solution for Comfort and Reliability</h3> -->
                                                         <div class="spacer-10"></div>
@@ -263,7 +293,7 @@
                                             </div>
 
                                             <div class="row g-4 slider-extra sm-hide">
-                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <!-- <div class="col-lg-4 col-md-6 -sm-30">
                                                 <div class="relative">
                                                     <img src="images/icons/white/labor.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
                                                     <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
@@ -318,7 +348,8 @@
                                                     <div class="spacer-single"></div>
                                                     <div class="sw-text-wrapper">
                                                         <!-- <div class="subtitle s2 mb-2">Pure Comfort</div> -->
-                                                        <h2 class="slider-title mb-3">Built with Care, Backed by Trust
+                                                        <h2 class="slider-title mb-3" style="color: #f2f2f2;">Built with
+                                                            Care, Backed by Trust
                                                         </h2>
                                                         <!-- <h3 class="slider-teaser mb-3">Solution for Comfort and Reliability</h3> -->
                                                         <div class="spacer-10"></div>
@@ -376,7 +407,7 @@
 
                         </div>
                         <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
+                        <!-- <div class="swiper-pagination"></div> -->
 
                         <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
@@ -388,7 +419,7 @@
                 </div>
             </section>
 
-            <section class="pt50">
+            <section class="pt50 bg-white">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
@@ -426,303 +457,423 @@
 
                 </div>
             </section>
+            <style>
+                .card-wrapper {
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                    background-color: white;
+                }
 
-            <section class="no-top">
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="row">
-                            <div class="col-lg-6 offset-lg-3 text-center">
-                                <div class="subtitle bg-color-3 wow fadeInUp mb-3">Complete Solutions</div>
-                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Project Management Overview</h2>
-                                <p class="lead wow fadeInUp">From initial layout planning to final installation, this
-                                    process ensures efficient design, brand approval, quality production, and timely
-                                    delivery, resulting in high-quality, customized spaces tailored to client needs.</p>
-                            </div>
-                        </div>
+                .card-wrapper:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+                }
 
+                .card-img-top {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
 
+                .padding40 {
+                    padding: 40px;
+                }
 
+                /* Responsive tweaks */
+                @media (max-width: 768px) {
+                    .padding40 {
+                        padding: 20px;
+                    }
+                }
+            </style>
 
-                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0s">
-                            <div class="rounded-20px overflow-hidden">
-                                <div class="relative">
-                                    <!-- <img src="images/svg/LayoutMeasurment.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-3 rounded-10px absolute" alt=""> -->
-                                    <img src="images/misc/services-1.webp" class="img-fluid" alt="">
-                                </div>
-                                <div class="padding40 bg-color-3">
-                                    <h4>1. Layout & Measurements</h4>
-                                    <p class="no-bottom">Clients provide site measurements, which we use to design a
-                                        smart,
-                                        space-efficient layout that balances functionality, aesthetics, and optimal use
-                                        of available space. </p>
-                                    <div class="spacer-20"></div>
-                                    <!-- <a class="btn-main btn-light-trans" href="installation.html">Read more</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".2s">
-                            <div class="rounded-20px overflow-hidden">
-                                <div class="relative">
-                                    <!-- <img src="images/svg/3Dvisulization.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-2 rounded-10px absolute" alt=""> -->
-                                    <img src="images/misc/services-2.webp" class="img-fluid" alt="">
-                                </div>
-                                <div class="padding40 bg-color-2 text-light">
-                                    <h4>2. 3D Visualization and Renders</h4>
-                                    <p class="no-bottom">We create high-quality 3D visualizations and renders to help
-                                        clients clearly understand the final look and feel of their space.
+            <section class="no-top" style="background-color: #fff;">
+                <div class="pt50 bg-white">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-3 text-center">
+                                    <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Complete Solutions</div> -->
+                                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Project Management Overview</h2>
+                                    <p class="lead wow fadeInUp">From initial layout planning to final installation,
+                                        this
+                                        process ensures efficient design, brand approval, quality production, and timely
+                                        delivery, resulting in high-quality, customized spaces tailored to client needs.
                                     </p>
-                                    <div class="spacer-20"></div>
-                                    <!-- <a class="btn-main btn-dark-trans" href="repair.html">Read more</a> -->
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                            <div class="rounded-20px overflow-hidden">
-                                <div class="relative">
-                                    <!-- <img src="images/svg/keylineDrawing.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color rounded-10px absolute" alt=""> -->
-                                    <img src="images/misc/services-3.webp" class="img-fluid" alt="">
-                                </div>
-                                <div class="padding40 bg-color text-light">
-                                    <h4>3. Keyline Drawing</h4>
-                                    <p class="no-bottom">Detailed keyline drawings show exact dimensions and
-                                        specifications,
-                                        ensuring accurate and consistent production while helping to prevent errors and
-                                        streamline the manufacturing process.
-                                    </p>
-                                    <div class="spacer-20"></div>
-                                    <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
+                            <style>
+                                .image-overlay-container {
+                                    position: relative;
+                                    display: inline-block;
+                                }
+
+                                .image-overlay-container img {
+                                    display: block;
+                                    width: 100%;
+                                    height: auto;
+                                }
+
+                                .image-overlay-container .overlay {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba(124, 115, 70, 0.445);
+                                    opacity: 0.5;
+                                    /* Adjust for more or less transparency */
+                                    pointer-events: none;
+                                    /* Allows clicks to pass through */
+                                }
+                            </style>
+
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-1.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>1. Layout & Measurements</h4>
+                                        <p class="no-bottom">Clients provide site measurements, which we use to design a
+                                            smart,
+                                            space-efficient layout that balances functionality, aesthetics, and optimal
+                                            use
+                                            of available space.</p>
+                                        <div class="spacer-20"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                            <div class="rounded-20px overflow-hidden">
-                                <div class="relative">
-                                    <!-- <img src="images/svg/agreement.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-3 rounded-10px absolute" alt=""> -->
-                                    <img src="images/misc/services-4.webp" class="img-fluid" alt="">
-                                </div>
-                                <div class="padding40 bg-color-3">
-                                    <h4>4. Brand Approval and Agreement Signing</h4>
-                                    <p class="no-bottom">Final designs are submitted for client approval to ensure
-                                        satisfaction. Once approved, agreements are signed to officially begin
-                                        production</p>
-                                    <div class="spacer-20"></div>
-                                    <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
-                                </div>
-                            </div>
-                        </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".2s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-2.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
 
-
-                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                            <div class="rounded-20px overflow-hidden">
-                                <div class="relative">
-                                    <!-- <img src="images/svg/production.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-2 rounded-10px absolute" alt=""> -->
-                                    <img src="images/misc/services-5.webp" class="img-fluid" alt="">
-                                </div>
-                                <div class="padding40 bg-color-2 text-light">
-                                    <h4>5. Production</h4>
-                                    <p class="no-bottom">Our manufacturing team begins production, maintaining strict
-                                        quality control and closely following the approved designs and specifications to
-                                        deliver flawless results on time.
-                                    </p>
-                                    <div class="spacer-20"></div>
-                                    <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>2. 3D Visualization and Renders</h4>
+                                        <p class="no-bottom">We create high-quality 3D visualizations and renders to
+                                            help
+                                            clients clearly understand the final look and feel of their space.</p>
+                                        <div class="spacer-20"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                            <div class="rounded-20px overflow-hidden">
-                                <div class="relative">
-                                    <!-- <img src="images/svg/dispactch_delivery.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color rounded-10px absolute" alt=""> -->
-                                    <img src="images/misc/services-6.webp" class="img-fluid" alt="">
-                                </div>
-                                <div class="padding40 bg-color text-light">
-                                    <h4>6. Dispatch , Delivery and Installation</h4>
-                                    <p class="no-bottom"> Completed products are carefully packed, dispatched to the
-                                        project site, and installed efficiently to ensure a smooth handover.
-                                    </p>
-                                    <div class="spacer-20"></div>
-                                    <!-- <a class="btn-main btn-dark-trans" href="maintenance.html">Read more</a> -->
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-3.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>3. Keyline Drawing</h4>
+                                        <p class="no-bottom">Detailed keyline drawings show exact dimensions and
+                                            specifications, ensuring accurate and consistent production while helping to
+                                            prevent errors and streamline the manufacturing process.</p>
+                                        <div class="spacer-20"></div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".6s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-4.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>4. Brand Approval and Agreement Signing</h4>
+                                        <p class="no-bottom">Final designs are submitted for client approval to ensure
+                                            satisfaction. Once approved, agreements are signed to officially begin
+                                            production.</p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".8s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-5.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>5. Production</h4>
+                                        <p class="no-bottom">Our manufacturing team begins production, maintaining
+                                            strict
+                                            quality control and closely following the approved designs and
+                                            specifications to
+                                            deliver flawless results on time.</p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="1s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-6.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>6. Dispatch, Delivery and Installation</h4>
+                                        <p class="no-bottom">Completed products are carefully packed, dispatched to the
+                                            project site, and installed efficiently to ensure a smooth handover.</p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
-
                     </div>
                 </div>
             </section>
 
             <section class="bg-color-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3 text-center">
-                            <!-- <div class="subtitle bg-color-2 text-white wow fadeInUp mb-3">Top 6 Reasons</div> -->
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Why Choose Us</h2>
-                            <p class="lead wow fadeInUp">We offer a unique combination of local presence, direct
-                                service, expert design assistance, comprehensive project management, in-house
-                                manufacturing, and dedicated support, ensuring a smooth, personalized experience for
-                                every client.</p>
-                            <div class="spacer-single"></div>
-                        </div>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".0s">
-                            <div>
-                                <i class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
-                                <div class="pl-80">
-                                    <h4>Local Presence(USA)</h4>
-                                    <p class="mb-0">With our presence in the USA, we offer faster communication, quicker
-                                        support, and better project coordination.
-                                    </p>
-                                </div>
+                <div class="pt50 bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3 text-center">
+                                <!-- <div class="subtitle bg-color-2 text-white wow fadeInUp mb-3">Top 6 Reasons</div> -->
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s" style="margin-top: -102px;">Why Choose Us
+                                </h2>
+                                <p class="lead wow fadeInUp">We offer a unique combination of local presence, direct
+                                    service, expert design assistance, comprehensive project management, in-house
+                                    manufacturing, and dedicated support, ensuring a smooth, personalized experience for
+                                    every client.</p>
+                                <div class="spacer-single"></div>
                             </div>
                         </div>
+                        <style>
+                            .icon_check {
+                                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                                /* Adds a subtle shadow */
+                            }
 
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                            <div>
-                                <i class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
-                                <div class="pl-80">
-                                    <h4>Direct B2C offerings</h4>
-                                    <p class="mb-0">We work directly with hotels and businesses, ensuring better
-                                        pricing, transparency, and personalized service.</p>
+                            /* box-shadow: offset-x offset-y blur-radius color */
+                            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+                            /* A bit more pronounced */
+                        </style>
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".0s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80" style="background-color: white;">
+                                        <h4>Local Presence(USA)</h4>
+                                        <p class="mb-0">With our presence in the USA, we offer faster communication,
+                                            quicker
+                                            support, and better project coordination.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                            <div>
-                                <i class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
-                                <div class="pl-80">
-                                    <h4> Free design services</h4>
-                                    <p class="mb-0">Our expert team provides complimentary design assistance, helping
-                                        you visualize and perfect your project at no extra cost
-                                        .</p>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4>Direct B2C offerings</h4>
+                                        <p class="mb-0">We work directly with hotels and businesses, ensuring better
+                                            pricing, transparency, and personalized service.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                            <div>
-                                <i
-                                    class="bg-color-2 text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
-                                <div class="pl-80">
-                                    <h4>End-to-End Project Management</h4>
-                                    <p class="mb-0">From layout planning to final installation, we handle every step of
-                                        your project for a seamless experience.
-                                        .</p>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4> Free design services</h4>
+                                        <p class="mb-0">Our expert team provides complimentary design assistance,
+                                            helping
+                                            you visualize and perfect your project at no extra cost
+                                            .</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                            <div>
-                                <i
-                                    class="bg-color-2 text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
-                                <div class="pl-80">
-                                    <h4>In-house manufacturing</h4>
-                                    <p class="mb-0">All products are manufactured in our own facility, giving us
-                                        complete control over quality, timelines, and customization.
-                                    </p>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color-2 text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4>End-to-End Project Management</h4>
+                                        <p class="mb-0">From layout planning to final installation, we handle every step
+                                            of
+                                            your project for a seamless experience.
+                                            .</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
-                            <div>
-                                <i
-                                    class="bg-color-2 text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
-                                <div class="pl-80">
-                                    <h4> Personalized client support</h4>
-                                    <p class="mb-0">We offer dedicated, one-on-one support to ensure your unique needs
-                                        are understood and delivered with care.
-                                        .</p>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color-2 text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4>In-house manufacturing</h4>
+                                        <p class="mb-0">All products are manufactured in our own facility, giving us
+                                            complete control over quality, timelines, and customization.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="spacer-double"></div>
-                        <div class="col-lg-6 offset-lg-3 text-center">
-                            <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Material We Used</div> -->
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Materials We Use </h2>
-                        </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color-2 text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4> Personalized client support</h4>
+                                        <p class="mb-0">We offer dedicated, one-on-one support to ensure your unique
+                                            needs
+                                            are understood and delivered with care.
+                                            .</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <!-- Partition Line -->
-                        <!-- <hr style="border: 1px solid #727272; margin: 20px 0; width: 100%;"> -->
+                            <div class="spacer-double"></div>
+                            <div class="col-lg-6 offset-lg-3 text-center">
+                                <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Material We Used</div> -->
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Materials We Use </h2>
+                            </div>
+
+                            <!-- Partition Line -->
+                            <!-- <hr style="border: 1px solid #727272; margin: 20px 0; width: 100%;"> -->
 
                             <!-- Carousel Wrapper -->
-<div class="logo-carousel" style="background: 0% 0% / cover no-repeat rgb(249 250 255);">
-  <div class="logo-track">
-    <!-- Repeat the logos twice for seamless infinite effect -->
-    <div class="logo-slide"><img src="images/rawmaterailbrand/carbphase2.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/centurylogo.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/hettich.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/logo2.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/merino2.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/rehanu2.webp" alt=""></div>
-     <div class="logo-slide"><img src="images/rawmaterailbrand/ss1.png" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/ss2.png" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/ss3.png" alt=""></div>
+                            <div class="logo-carousel" style="background: 0% 0% / cover no-repeat #ffffff;">
+                                <div class="logo-track">
+                                    <!-- Repeat the logos twice for seamless infinite effect -->
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/carbphase2.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/centurylogo.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/hettich.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/logo2.webp" alt=""></div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/merino2.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/rehanu2.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/ss1.png" alt=""></div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/ss2.png" alt=""></div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/ss3.png" alt=""></div>
 
-    <!-- Duplicate for infinite loop effect -->
-    <div class="logo-slide"><img src="images/rawmaterailbrand/carbphase2.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/centurylogo.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/hettich.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/logo2.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/merino2.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/rehanu2.webp" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/ss1.png" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/ss2.png" alt=""></div>
-    <div class="logo-slide"><img src="images/rawmaterailbrand/ss3.png" alt=""></div>
-  </div>
-</div>
+                                    <!-- Duplicate for infinite loop effect -->
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/carbphase2.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/centurylogo.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/hettich.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/logo2.webp" alt=""></div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/merino2.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/rehanu2.webp" alt="">
+                                    </div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/ss1.png" alt=""></div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/ss2.png" alt=""></div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/ss3.png" alt=""></div>
+                                </div>
+                            </div>
 
-<!-- CSS -->
-<style>
-.logo-carousel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-    background: #f2f2f2;
-  padding: 20px 0;
-}
+                            <!-- CSS -->
+                            <style>
+                                .logo-track {
+                                    display: flex;
+                                    animation: scroll 40s linear infinite;
+                                    /* or however you're animating */
+                                    align-items: center;
+                                }
 
-.logo-track {
-  display: flex;
-  width: calc(12 * 160px); /* 12 logos * width */
-  animation: scroll 30s linear infinite;
-}
+                                .logo-slide {
+                                    flex: 0 0 auto;
+                                    margin-right: 20px;
+                                    /* Adjust spacing as needed */
+                                }
 
-.logo-slide {
-  width: 160px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+                                .logo-track {
+                                    display: flex;
+                                    gap: 20px;
+                                    /* Adjust gap as needed */
+                                    animation: scroll 40s linear infinite;
+                                    align-items: center;
+                                }
 
-.logo-slide img {
-  max-width: 100%;
-  height: auto;
-  padding: 10px;
-  object-fit: contain;
-}
+                                .logo-carousel {
+                                    overflow: hidden;
+                                    position: relative;
+                                    width: 100%;
+                                    background: #ffffff;
+                                    padding: 20px 0;
+                                }
 
-/* Infinite scroll animation */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
+                                .logo-track {
+                                    display: flex;
+                                    width: calc(12 * 160px);
+                                    /* 12 logos * width */
+                                    animation: scroll 30s linear infinite;
+                                }
 
-  100% {
-    transform: translateX(-50%);
-  }
-}
-</style>
+                                .logo-slide {
+                                    width: 160px;
+                                    flex-shrink: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
 
-                </div>
+                                .logo-slide img {
+                                    max-width: 100%;
+                                    height: auto;
+                                    padding: 10px;
+                                    object-fit: contain;
+                                }
+
+                                /* Infinite scroll animation */
+                                @keyframes scroll {
+                                    0% {
+                                        transform: translateX(0);
+                                    }
+
+                                    100% {
+                                        transform: translateX(-50%);
+                                    }
+                                }
+                            </style>
+
+                        </div>
+                    </div>
             </section>
         </div>
     </div>
@@ -736,25 +887,36 @@
 
 
     <section class="no-top mt-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="padding60 rounded-1 sm-padding40 overflow-hidden position-relative jarallax text-light">
-                        <img src="images/background/9.png" class="jarallax-img" alt="">
-                        <div class="row align-items-center g-4 gx-5 relative z-index-1000">
-                            <div class="col-lg-8">
-                                <!-- <div class="subtitle s2 wow fadeInUp mb-3">HVAC Specialist</div> -->
-                                <h2 class="mb20 wow fadeInUp" data-wow-delay=".2s">At Endlos Hospitality,
-                                    we craft durable, stylish furniture with a focus on quality, innovation,
-                                    and sustainability, helping hotels create memorable, comfortable spaces for
-                                    their guests.</h2>
-                                <!-- <a class="btn-main" href="contact.html">Schedule Now</a> -->
-                            </div>
-                            <div class="col-lg-4 text-center">
-                                <img src="images/team/khilanpatel.webp" class="img-fluid rounded-10px wow scaleIn"
-                                    alt="">
-                                <h5 class="mt-3 mb-0">Khilan Patel</h5>
-                                <p class="small mb-2">Founder &amp; CEO</p>
+        <div class="pt50 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div
+                            class="padding60 rounded-1 sm-padding40 overflow-hidden position-relative jarallax text-light">
+                            <img src="images/background/9.png" class="jarallax-img" alt="">
+                            <div class="row align-items-center g-4 gx-5 relative z-index-1000">
+                                <div class="col-lg-8">
+                                    <!-- <div class="subtitle s2 wow fadeInUp mb-3">HVAC Specialist</div> -->
+                                    <h2 class="mb20 wow fadeInUp" data-wow-delay=".2s" style="color: white;">At Endlos
+                                        Hospitality,
+                                        we craft durable, stylish furniture with a focus on quality, innovation,
+                                        and sustainability, helping hotels create memorable, comfortable spaces for
+                                        their guests.</h2>
+                                    <!-- <a class="btn-main" href="contact.html">Schedule Now</a> -->
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <img src="images/team/khilanpatel.webp" class="img-fluid rounded-10px wow scaleIn"
+                                        alt="">
+                                    <h5 class="mt-3 mb-0"
+                                        style="color: white; font-weight: bolder; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+                                        Khilan Patel
+                                    </h5>
+                                    <p class="small mb-2"
+                                        style="color: rgb(255, 255, 255); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">
+                                        Founder &amp; CEO
+                                    </p>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -848,6 +1010,7 @@
             </section> -->
 
     <section class="no-top text-center">
+        <div class="pt50 bg-white"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 text-center">
@@ -1050,6 +1213,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section class="bg-color-3">
@@ -1249,28 +1413,34 @@
             </section> -->
     <!-- ✅ Brands Section -->
     <section class="no-top">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-12 text-center wow fadeInUp">
-                    <h2 class="wow fadeInUp" data-wow-delay=".2s" style="margin-top: -5px;">Brands we are
-                        working with</h2>
-                </div>
+        <div class="pt50 bg-white">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-12 text-center wow fadeInUp">
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s" style="margin-top: -5px;">Brands we are
+                            working with</h2>
+                    </div>
 
-                <div class="col-md-12 wow fadeInUp">
-                    <div id="owl-logo" class="logo-carousel owl-carousel owl-theme">
-                        <img src="images/workingWithBrands/wyndham-garden-vector-logo-small-removebg-preview.png" class="img-fluid px-4"
-                            alt="">
-                        <img src="images/workingWithBrands/Super_8_Motel.svg-removebg-preview.png" class="img-fluid px-4" alt="">
-                        <img src="images/workingWithBrands/ramada4832-removebg-preview.png" class="img-fluid px-4" alt="">
-                        <img src="images/workingWithBrands/microtel-inn-suites-by-wyndham.png" class="img-fluid px-4"
-                            alt="">
-                        <img src="images/workingWithBrands/Days_Inn_logo.svg.png" class="img-fluid px-4" alt="">
-                        <img src="images/workingWithBrands/candlewood-suites6397-removebg-preview.png" class="img-fluid px-4" alt="">
-                        <img src="images/workingWithBrands/Best-Western-logo2-1.png" class="img-fluid px-4" alt="">
-                        <img src="images/workingWithBrands/Americas_Best_Value_Inn_Logo.png" class="img-fluid px-4"
-                            alt="">
-                        <img src="images/workingWithBrands/AmericInn_logo.svg.png" class="img-fluid px-4" alt="">
-                        <img src="images/workingWithBrands/Comfort_Inn_Logo-removebg-preview.png" class="img-fluid px-4" alt="">
+                    <div class="col-md-12 wow fadeInUp">
+                        <div id="owl-logo" class="logo-carousel owl-carousel owl-theme">
+                            <img src="images/workingWithBrands/wyndham-garden-vector-logo-small-removebg-preview.png"
+                                class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Super_8_Motel.svg-removebg-preview.png"
+                                class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/ramada4832-removebg-preview.png" class="img-fluid px-4"
+                                alt="">
+                            <img src="images/workingWithBrands/microtel-inn-suites-by-wyndham.png"
+                                class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Days_Inn_logo.svg.png" class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/candlewood-suites6397-removebg-preview.png"
+                                class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Best-Western-logo2-1.png" class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Americas_Best_Value_Inn_Logo.png" class="img-fluid px-4"
+                                alt="">
+                            <img src="images/workingWithBrands/AmericInn_logo.svg.png" class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Comfort_Inn_Logo-removebg-preview.png"
+                                class="img-fluid px-4" alt="">
+                        </div>
                     </div>
                 </div>
             </div>

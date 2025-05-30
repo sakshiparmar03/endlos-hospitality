@@ -95,7 +95,7 @@ h1.s2 .c1 span,
 .scrollbar,
 .d_demo_img .d-overlay span
  {
-    background:var(--primary-color);
+  background: #ffffff;
 }
 ::-moz-selection { /* Code for Firefox */
     color:#ffffff;
@@ -163,6 +163,7 @@ h2.hs1 span,
 .countdown-s4 .countdown-period,
 a.btn-link,
 blockquote.s1:before,
+
 .accordion a:before,
 .expand-custom .toggle:before,
 .sitemap.s1 li:before,
@@ -185,7 +186,7 @@ a.bc-btn,
 .topbar-widget a span,
 .de-icon,
 a#cookit-link {
-    color: var(--primary-color);
+    color: white;
 }
 
 
@@ -259,9 +260,8 @@ a.btn-line.hover,
 .page-item.active .page-link,
 .de-marquee-list .d-item-block.bg-color-2,
 body::-webkit-scrollbar-thumb,#de_modal::-webkit-scrollbar-thumb{
-    background: var(--secondary-color);
+background: #000000;
 }
-
 section.dark {
     background: rgba(var(--primary-color-rgb), .98);
 }
@@ -274,8 +274,9 @@ section.dark {
 }
 
 .bg-color-3{
-background: #6184ff0a;
+background: #fff;
 }
+
 #topbar i{
     color: var(--tertiary-color);
 }

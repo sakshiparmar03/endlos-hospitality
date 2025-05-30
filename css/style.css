@@ -82,7 +82,7 @@ Table of content:
   --bg-dark-3: #303030;
   --bg-grey: #F0F1F3;
   --bg-gradient-1: 0deg, rgba(var(--primary-color-rgb), .1) 0%, rgba(var(--secondary-color-rgb), .2) 100%;
-  --body-font-color: #7b8893;
+  --body-font-color: #333; 
   --dark-body-font-color: #F5F5F7;
   --swiper-theme-color: var(--secondary-color);
   --rounded-1: 12px;
@@ -641,7 +641,7 @@ header .header-col.mid .social-icons {
   }
 
   #subheader .de-overlay{
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb),1), rgba(var(--secondary-color-rgb),0));
+   background: rgb(71 67 46 / 20%);
   }
 
 .de-overlay-gradient{
@@ -1875,7 +1875,7 @@ header.header-light .logo-2 {
   width: 100%;
   overflow: hidden;
   top: 0;
-  background: var(--primary-color) !important;
+background: #716345 !important;
 }
 
 #topbar.topbar-dark {
@@ -3873,7 +3873,7 @@ a.btn-line,
   display: inline-block;
   font-family: var(--title-font);
   text-align: center;
-  color: #fff;
+  color: #000000;
   outline: 0;
   font-weight: bold;
   text-decoration: none;
@@ -5170,7 +5170,7 @@ span.teaser {
 }
 
 .text-light, .text-light p {
-  color: var(--dark-body-font-color);
+     color: #333;
 }
 
 .text-dark {
@@ -5192,7 +5192,7 @@ color: #678fd5;
 .text-light h4,
 .text-light h5,
 .text-light h6 {
-  color: #fff;
+     color: #oa2540;
 }
 
 .de_light .text-light h1,
@@ -9394,6 +9394,7 @@ h4.de-timeline-year {
 
 .padding40 {
   padding: 40px;
+      background: #f9faff;
 }
 
 .padding50 {
@@ -13108,8 +13109,9 @@ i.bg-color-secondary {
   left: 0;
   width: 100%;
   height: 10px;
-  background: var(--secondary-color);
+background: rgb(115 96 1 / 12%);
 }
+
 h2.slider-title{
   font-size: 64px;
   letter-spacing: -3px;
@@ -13124,7 +13126,7 @@ p.slider-teaser{
 }
 
 .sw-overlay{
-  background: rgba(var(--primary-color-rgb), .35);
+   background: rgb(71 67 46 / 20%);
 }
 
 .swiper-scrollbar,
@@ -20860,7 +20862,7 @@ body {
 }
 
 body {
-  background: #f2f2f2;
+ background: #fff;
 }
 
 @keyframes slide {
@@ -20892,7 +20894,7 @@ body {
 
 .logos:before {
   left: 0;
-  background:;
+
 }
 
 .logos:after {
@@ -20917,4 +20919,173 @@ body {
 
 
 
+
+/* General anchor hover */
+header a {
+    color: inherit;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header a:hover {
+    color: #FFD700;
+}
+
+/* Social media icon hover */
+header .social-icons a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header .social-icons a:hover i {
+    color: #FFD700;
+    transform: scale(1.2);
+}
+
+/* Topbar contact items */
+header .topbar-widget a {
+    transition: color 0.3s ease;
+}
+
+header .topbar-widget a:hover {
+    color: #FFD700;
+}
+
+/* Main menu hover */
+#mainmenu > li > a.menu-item {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#mainmenu > li > a.menu-item:hover {
+    color: #FFD700;
+}
+
+/* Optional underline on hover (no layout shift) */
+#mainmenu > li > a.menu-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+#mainmenu > li > a.menu-item:hover::after {
+    width: 100%;
+}
+
+/* Optional menu item hover background */
+#mainmenu > li:hover {
+    background-color: rgba(255, 215, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+header .btn-main {
+    background-color: #222;; /* or your default button color */
+    color: black;
+    transition: all 0.3s ease;
+}
+
+header .btn-main:hover {
+    background-color:#f5bb0e;
+    color: #000;
+    box-shadow: gray;
+    transform: scale(1.03);
+}
+
+/* Mobile menu icon */
+#menu-btn {
+    transition: color 0.3s ease;
+}
+
+#menu-btn:hover {
+    color:#f5bb0e;
+    cursor: pointer;
+}
+
+
+.btn-main {
+    padding: 12px 24px;
+    color: white;
+    background-color: #f5bb0e ;/* or use your bg-color-2 */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Hover effect: text turns black */
+.btn-main:hover {
+    color: black;
+    background-color:#f5bb0e; /* optional: darker background on hover */
+}
+.btn-main.bg-color-2:hover {
+    color:black;
+    background-color:#f5bb0e;
+}
+
+
+/* Remove hover effects from all links */
+header a:hover,
+header .topbar-widget a:hover,
+header .social-icons a:hover i,
+#mainmenu > li > a.menu-item:hover,
+#mainmenu > li:hover,
+header .btn-main:hover,
+#menu-btn:hover {
+    color: inherit !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+    text-decoration: none !important;
+}
+
+/* Remove underline animation */
+#mainmenu > li > a.menu-item::after,
+#mainmenu > li > a.menu-item:hover::after {
+    content: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* Remove scaling and transition */
+header a,
+header i,
+header .btn-main,
+#menu-btn {
+    transition: none !important;
+    transform: none !important;
+}
+
+/* Reset transitions and transforms, keep only color change */
+header a,
+header i,
+header .btn-main,
+#menu-btn {
+    transition: none;
+    transform: none;
+}
+
+/* All anchor and icon elements hover: black to yellow */
+header a:hover,
+header .topbar-widget a:hover,
+header .social-icons a:hover i,
+#mainmenu > li > a.menu-item:hover,
+header .btn-main:hover,
+#menu-btn:hover {
+    color: #FFD700 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-decoration: none;
+}
+
+/* If you want to apply color change only to black elements */
+header a,
+header i,
+header .btn-main,
+#menu-btn {
+    color: #000; /* base color: black */
+}
 
