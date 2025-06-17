@@ -133,10 +133,34 @@
                                 };
                             </script>
                             <!-- Calendly badge widget end -->
+                            <style>
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+                                }
 
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    /* Optional: to ensure text is readable */
+                                }
+
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                                    BACKGROUND: WHITE;
+                                    /* Normal shadow */
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                                    /* Deeper shadow on hover */
+                                }
+                            </style>
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
-                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2" style="color: white;">Book a Meeting</a>
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
                                     <span id="menu-btn"></span>
                                 </div>
                             </div>
