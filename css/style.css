@@ -21167,3 +21167,58 @@ body, html {
     }
 }
 
+
+
+
+.linkedin-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #0a66c2;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.linkedin-square i {
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.linkedin-square:hover {
+    background-color: white;
+    border: 1px solid #0a66c2;
+}
+
+.linkedin-square:hover i {
+    color: #0a66c2;
+}
+.linkedin-square {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0a66c2;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    text-decoration: none;
+}
+
+.linkedin-square i {
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.linkedin-square:hover {
+    background-color: white;
+    border: 1px solid #0a66c2;
+}
+
+.linkedin-square:hover i {
+    color: #0a66c2;
+}

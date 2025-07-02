@@ -33,7 +33,7 @@
         <!-- page preloader close -->
 
         <!-- header begin -->
-      <header class="transparent scroll-light has-topbar">
+        <header class="transparent scroll-light has-topbar">
             <div id="topbar">
                 <div class="container">
                     <div class="row">
@@ -59,8 +59,8 @@
                                     <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank">
                                         <i class="fa-brands fa-facebook fa-lg"></i>
                                     </a>
-                                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank" style="margin-top: -9px;"><i
-                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                                        style="margin-top: -9px;"><i class="fa-brands fa-linkedin-in"></i></a>
                                     </a>
                                     <a href="https://www.instagram.com/endlos.furniture?igsh=MXR2Z3FyOHNydHhoOA=="
                                         target="_blank">
@@ -275,10 +275,42 @@
 
 
 
-                                <div class="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6"></div>
-                                <div id='submit' class="mt20">
-                                    <input type='submit' id='send_message' value='Send Message' class="btn-main">
+                                <style>
+                                    #submit a {
+                                        display: inline-block;
+                                        padding: 14px 28px;
+                                        background-color: #f5bb0e;
+                                        color: #000000;
+                                        text-decoration: none;
+                                        border-radius: 15px;
+                                        border: none;
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        cursor: pointer;
+                                        /* Makes it look clickable */
+                                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                                        transition: all 0.25s ease;
+                                    }
+
+                                    #submit a:hover {
+                                        background-color: #e6b010;
+                                        transform: scale(1.05);
+                                        /* Slight grow */
+                                        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+                                    }
+
+                                    #submit a:active {
+                                        transform: scale(0.98);
+                                        /* Press effect */
+                                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+                                    }
+                                </style>
+
+                                <div id="submit" class="mt20">
+                                    <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture"
+                                        target="_blank">Send Message</a>
                                 </div>
+
 
                                 <div id="success_message" class='success'>
                                     Your message has been sent successfully. Refresh this page if you want to send more
@@ -292,11 +324,11 @@
                         </div>
 
                         <div class="col-lg-4">
-                            <h4>Our Office</h4>
+                            <h4>Our Factory</h4>
                             <div class="img-with-cap mb20">
                                 <div class="d-title">Mon - Fri 08.00 - 18.00</div>
                                 <div class="d-overlay"></div>
-                                <img src="images/misc/webp5.png" class="img-fullwidth rounded-1" alt="">
+                                <img src="images/misc/Contact page Image.png" class="img-fullwidth rounded-1" alt="">
                             </div>
 
                             <div class="spacer-single"></div>
@@ -311,13 +343,39 @@
 
                             <div class="fw-bold text-dark"><i class="icofont-envelope me-2 id-color-2"></i>Send a
                                 Message</div>
-                            info@endlos.furniture
+                            <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank">
+
+                            </a>
+
+                            <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                                style="color: #000; text-decoration: none;" onmouseover="this.style.color='#f5bb0e'"
+                                onmouseout="this.style.color='black'">
+                                info@endlos.furniture
+                            </a>
+
+
 
                             <div class="spacer-single"></div>
 
-                            <div class="fw-bold text-dark"><i class="icofont-phone me-2 id-color-2"></i>Call Us Directly
+                            <style>
+                                .contact-link {
+                                    color: black;
+                                    text-decoration: none;
+                                    transition: color 0.3s ease;
+                                    display: inline-block;
+                                }
+
+                                .contact-link:hover {
+                                    color: #f5bb0e;
+                                }
+                            </style>
+
+                            <div class="fw-bold text-dark">
+                                <i class="icofont-phone me-2 id-color-2"></i>Call Us Directly
                             </div>
-                            +919727792087
+                            <a href="https://wa.me/19452677548" class="contact-link">
+                                +1(945)267-7548
+                            </a>
 
                             <div class="spacer-single"></div>
                         </div>
@@ -329,108 +387,112 @@
         <!-- content close -->
         <!-- footer begin -->
         <!-- footer begin -->
-     <footer style="background-color: #000; color: #fff; padding: 40px 0;">
-        <div style="width: 100%; padding-inline: 20px;">
-            <div
-                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; max-width: 1584px; margin: 0 auto;">
+        <footer style="background-color: #000; color: #fff; padding: 40px 0;">
+            <div style="width: 100%; padding-inline: 20px;">
+                <div
+                    style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; max-width: 1584px; margin: 0 auto;">
 
-                <!-- About Section -->
-                <div style="flex: 1 1 300px;">
-                    <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo" style="margin-bottom: 26px">
+                    <!-- About Section -->
+                    <div style="flex: 1 1 300px;">
+                        <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo" style="margin-bottom: 26px">
 
-                    <p style="line-height: 1.9;">
-                        Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
-                        production capabilities. From guest room case goods to custom solutions, we craft durable,
-                        high-quality furniture tailored to the needs of the hospitality industry—delivering across
-                        global markets with a commitment to excellence and reliability.
-                    </p>
-                </div>
+                        <p style="line-height: 1.9;">
+                            Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
+                            production capabilities. From guest room case goods to custom solutions, we craft durable,
+                            high-quality furniture tailored to the needs of the hospitality industry—delivering across
+                            global markets with a commitment to excellence and reliability.
+                        </p>
+                    </div>
 
-                <!-- Company Links -->
-                <div style="flex: 1 1 200px;">
-                    <div style="margin-left: 186px;">
-                        <h5 style="border-bottom: 2px solid#f5bb0e; display: inline-block; padding-bottom: 5px;">Company
-                        </h5>
-                          <style>
-                            ul.footer-links li a {
-                                color: #fff;
-                                text-decoration: none;
-                                transition: color 0.3s, text-decoration 0.3s;
-                            }
+                    <!-- Company Links -->
+                    <div style="flex: 1 1 200px;">
+                        <div style="margin-left: 186px;">
+                            <h5 style="border-bottom: 2px solid#f5bb0e; display: inline-block; padding-bottom: 5px;">
+                                Company
+                            </h5>
+                            <style>
+                                ul.footer-links li a {
+                                    color: #fff;
+                                    text-decoration: none;
+                                    transition: color 0.3s, text-decoration 0.3s;
+                                }
 
-                            ul.footer-links li a:hover {
-                                color: #ffcc00;
-                                /* Change to your preferred hover color */
-                                text-decoration: underline;
-                            }
-                        </style>
+                                ul.footer-links li a:hover {
+                                    color: #ffcc00;
+                                    /* Change to your preferred hover color */
+                                    text-decoration: underline;
+                                }
+                            </style>
 
-                        <ul class="footer-links"
-                            style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                            <ul class="footer-links"
+                                style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Contact Info -->
+                    <div style="flex: 1 1 250px;">
+                        <h5
+                            style="border-bottom: 2px solid #f5bb0e;; display: inline-block; padding-bottom: 5px; margin-bottom: 26px; ">
+                            Contact
+                            us</h5>
+
+                        <div class="fw-bold text-white">
+                            <i class="icofont-location-pin me-2 id-color-2"></i>Sales Office
+                        </div>
+                        <!-- <p style="margin-top: 15px; line-height: 1.8;"> -->
+
+                        <div>2117 N Main St,Cleburne, TX 76033, United States</div>
+
+                        <div class="fw-bold text-white">
+                            <i class="icofont-location-pin me-2 id-color-2"></i>Factory Location
+                        </div>
+                        <div>Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, opposite Gharda ghar, Kuha,
+                            Gujarat 382433</div>
+                        <br>
+
+                        <!-- Phone: <a href="tel:+919327777854" style="color: #fff;">+91 9327777854</a><br> -->
+                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank">
+                            <i class="icofont-envelope"></i>info@endlos.furniture
+                        </a>
+                        <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"
+                                style="font-size: 17px;"><i class="icofont-phone"></i>+1(945)267-7548</a></div>
+                        <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"
+                                style="font-size: 17px; margin-top: -13px;"><i
+                                    class="icofont-phone"></i>+919727792087</a>
+                        </div>
                     </div>
                 </div>
 
 
-                <!-- Contact Info -->
-                <div style="flex: 1 1 250px;">
-                    <h5 style="border-bottom: 2px solid #f5bb0e;; display: inline-block; padding-bottom: 5px; margin-bottom: 26px; ">Contact
-                        us</h5>
 
-                    <div class="fw-bold text-white">
-                        <i class="icofont-location-pin me-2 id-color-2"></i>Sales Office
-                    </div>
-                    <!-- <p style="margin-top: 15px; line-height: 1.8;"> -->
 
-                    <div>2117 N Main St,Cleburne, TX 76033, United States</div>
-
-                    <div class="fw-bold text-white">
-                        <i class="icofont-location-pin me-2 id-color-2"></i>Factory Location
-                    </div>
-                    <div>Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, opposite Gharda ghar, Kuha,
-                        Gujarat 382433</div>
-                    <br>
-
-                    <!-- Phone: <a href="tel:+919327777854" style="color: #fff;">+91 9327777854</a><br> -->
-                    <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank">
-                        <i class="icofont-envelope"></i>info@endlos.furniture
-                    </a>
-                    <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"
-                            style="font-size: 17px;"><i class="icofont-phone"></i>+1(945)267-7548</a></div>
-                    <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"
-                            style="font-size: 17px; margin-top: -13px;"><i class="icofont-phone"></i>+919727792087</a>
+                <!-- Bottom Section -->
+                <div
+                    style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
+                    <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/19452677548" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;">
+                            <i class="icofont-envelope"></i></a>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <!-- Bottom Section -->
-            <div
-                style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
-                <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
-                <div style="margin-top: 10px;">
-                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
-                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
-                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/19452677548" target="_blank"
-                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
-                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;">
-                        <i class="icofont-envelope"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
         <!-- footer close -->
         <!-- footer close -->
