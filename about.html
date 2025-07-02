@@ -202,8 +202,8 @@
                             <!-- <div class="subtitle s2 bg-color text-light wow fadeInUp mb-2">Our Service</div> -->
                             <h1 style="color:white">About Us</h1>
                             <ul class="crumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active">About Us</li>
+                                <!-- <li><a href="index.html">Home</a></li> -->
+                                <!-- <li class="active">About Us</li> -->
                             </ul>
                         </div>
                         <div class="col-lg-6 text-lg-end">
@@ -608,11 +608,26 @@
                     <div style="margin-left: 186px;">
                         <h5 style="border-bottom: 2px solid#f5bb0e; display: inline-block; padding-bottom: 5px;">Company
                         </h5>
-                        <ul style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
-                            <li><a href="products.html" style="color: #fff; text-decoration: none;">Products</a></li>
-                            <li><a href="projects.html" style="color: #fff; text-decoration: none;">Projects</a></li>
-                            <li><a href="about.html" style="color: #fff; text-decoration: none;">About Us</a></li>
-                            <li><a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a></li>
+                          <style>
+                            ul.footer-links li a {
+                                color: #fff;
+                                text-decoration: none;
+                                transition: color 0.3s, text-decoration 0.3s;
+                            }
+
+                            ul.footer-links li a:hover {
+                                color: #ffcc00;
+                                /* Change to your preferred hover color */
+                                text-decoration: underline;
+                            }
+                        </style>
+
+                        <ul class="footer-links"
+                            style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
